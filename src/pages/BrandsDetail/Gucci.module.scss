@@ -1,0 +1,225 @@
+.wrapper-2 {
+    display: flex;
+}
+.sidebar {
+    height: 928px;
+    margin-top: 75px;
+    margin-left: 34px;
+    border: 1px solid #eeeeee;
+    position: relative;
+}
+.sidebar-container {
+    width: 255px;
+    height: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+
+    ul {
+        margin-top: 10px;
+        list-style: none;
+    }
+}
+.sidebar-header {
+    font-size: 1.5rem;
+    color: #2f333a;
+}
+.sidebar-img {
+    position: absolute;
+    bottom: 0;
+    width: 255px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    filter: brightness(0.7);
+    &:hover {
+        // filter: drop-shadow(5px 10px 3px gray);
+        // transition: all 0.3s linear;
+        animation: animation-1 2s linear;
+    }
+}
+@keyframes animation-1 {
+    from {
+        filter: blur(2px);
+    }
+    to {
+        filter: blur(0px);
+        filter: brightness(1);
+    }
+}
+.brand {
+    display: flex;
+    font-weight: 500;
+    color: #737373;
+    align-items: center;
+    font-size: 1.4rem;
+}
+.brand + .brand {
+    padding-top: 10px;
+}
+.checkbox {
+    color: #bbbbbb !important;
+    font-size: 2rem;
+    padding-right: 10px;
+    &:hover .square {
+        display: none;
+        transition: all 0.3s linear;
+    }
+    &:hover .square-check {
+        display: inline-block;
+        color: var(--primary-color);
+        transition: all 0.3s linear;
+    }
+}
+.square {
+}
+.square-check {
+    display: none;
+}
+.gucci {
+    display: none !important;
+}
+.gucci-check {
+    color: var(--primary-color) !important;
+    display: block !important;
+}
+.products-detail {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 65px 34px 0px 34px;
+}
+.products-header {
+    margin-top: 64px;
+    margin-left: 43px;
+    width: 169px;
+    border-bottom: 3px solid var(--primary-color);
+}
+.header {
+    padding: 40px 34px 0px 34px;
+}
+.header-home {
+    font-size: 1.4rem;
+    color: #bbbbbb;
+    &:hover {
+        color: var(--primary-color);
+        transition: all 0.3s linear;
+    }
+}
+.header-sneakers {
+    font-size: 1.4rem;
+    color: #bbbbbb;
+    &:hover {
+        color: var(--primary-color);
+        transition: all 0.3s linear;
+    }
+}
+.header-icon {
+    margin: 0px 7px;
+    padding: 0px 5px;
+    font-size: 1rem;
+    color: #bbbbbb;
+}
+.header-product {
+    font-size: 1.4rem;
+    color: var(--primary-color);
+    font-weight: 500;
+}
+.container {
+    padding: 7px 10px 10px 10px;
+    width: 320px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    &:hover {
+        border-color: #eeeeee;
+        transition: all 1s linear;
+    }
+    &:hover .product_detail {
+        // display: flex !important;
+        opacity: 1;
+        animation-duration: 0.5s;
+        animation-name: flowdown;
+    }
+    img {
+        width: 300px;
+        height: 300px;
+    }
+    a {
+        transition: all 0.2s ease;
+        &:hover {
+            color: var(--primary-color);
+        }
+    }
+}
+@keyframes flowdown {
+    0% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(1);
+
+        opacity: 1;
+    }
+}
+.product_caption {
+    color: #2f333a;
+    line-height: 19px;
+    text-align: start !important;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
+.product_type {
+    font-size: 1.5rem !important;
+    text-transform: none !important;
+    color: #737373 !important;
+    font-weight: 500;
+    padding: 4px 0px 16px;
+}
+.product_price {
+    font-size: 1.5rem !important;
+    text-transform: none !important;
+}
+.product_detail {
+    opacity: 0;
+    border-top: 1px solid #eeeeee;
+    padding-top: 16px;
+    margin-top: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+.product_detail-left {
+    font-size: 1.4rem;
+    color: #2f333a;
+    font-weight: 600;
+    transition: all 1s linear;
+    &:hover .product-tippy {
+        opacity: 1;
+    }
+}
+.left-content {
+    margin-left: 14px;
+}
+.product_detail-right {
+    display: flex;
+    font-size: 1.7rem;
+    color: #bbbbbb;
+}
+.heart {
+    padding: 0px 14px;
+}
+.product-tippy {
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 0px 8px;
+    min-width: 75px;
+    max-height: 20px;
+    line-height: 20px;
+    min-height: 20px;
+    border-radius: 8px;
+    background: var(--primary-color);
+    box-shadow: 0 0 50px #0000001a;
+    border-radius: 3px;
+}

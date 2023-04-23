@@ -1,0 +1,51 @@
+.container {
+    width: 255px;
+    height: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+
+    ul {
+        margin-top: 10px;
+        list-style: none;
+    }
+}
+.header {
+    font-size: 1.5rem;
+    color: #2f333a;
+}
+.brand {
+    display: flex;
+    font-weight: 500;
+    color: #737373;
+    align-items: center;
+    font-size: 1.4rem;
+}
+.brand + .brand {
+    padding-top: 10px;
+}
+.checkbox {
+    color: #bbbbbb !important;
+    font-size: 2rem;
+    padding-right: 10px;
+    &:hover .square {
+        display: none;
+        transition: all 0.3s linear;
+    }
+    &:hover .square-check {
+        display: inline-block;
+        color: var(--primary-color);
+        transition: all 0.3s linear;
+    }
+}
+.square {
+}
+.square-check {
+    display: none;
+}
+
+.price {
+    border-top: 1px solid #eeeeee;
+    padding-top: 16px;
+    margin-top: 20px;
+}

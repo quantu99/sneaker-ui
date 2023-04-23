@@ -1,0 +1,63 @@
+.wrapper {
+    margin-left: 29px;
+    display: flex;
+    width: 1290px;
+}
+.left {
+    display: flex;
+    flex-direction: column;
+    img {
+        width: 520px;
+        height: 390px;
+        padding: 10px 33px 10px 15px;
+
+        &:hover {
+            filter: brightness(0.7);
+            transition: all 0.2s ease-in;
+        }
+    }
+}
+
+.center {
+    position: relative;
+    img {
+        width: 727px;
+        height: 770px;
+        padding: 10px 1px 0px 1px;
+        margin-left: 27px;
+
+        &:hover {
+            filter: brightness(0.7);
+            transition: all 0.2s ease-in;
+        }
+    }
+    &:hover .title {
+        animation-duration: 2s;
+        animation-name: bounceIn;
+    }
+}
+.title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    position: absolute;
+    letter-spacing: 14px;
+    right: 22%;
+    top: 45%;
+    color: white;
+}
+@keyframes bounceIn {
+    0% {
+        transform: scale(0.1);
+        opacity: 0;
+    }
+    60% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+// .music {
+//     display: none;
+// }

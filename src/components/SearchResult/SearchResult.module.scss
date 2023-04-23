@@ -1,0 +1,44 @@
+.wrapper {
+    width: 100%;
+}
+.container {
+    border-bottom: 1px solid #d4d4d4;
+}
+.container:last-child {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+.container {
+    display: flex;
+    padding: 5px 5px;
+    width: 100%;
+    height: 80px;
+
+    img {
+        width: 70px;
+        height: 70px;
+        border: 1px solid #d4d4d4;
+    }
+}
+.info {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    &:hover .name,
+    &:hover .price {
+        transition: all 0.3s linear;
+        color: var(--primary-color);
+    }
+}
+.name {
+    color: #2f333a;
+    font-size: 1.4rem;
+    padding: 8px 8px 4px;
+    font-weight: 500;
+}
+.price {
+    color: #2f333a;
+    font-size: 1.4rem;
+    padding: 8px 8px 4px;
+    font-weight: 500;
+}

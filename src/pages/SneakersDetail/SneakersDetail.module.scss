@@ -1,0 +1,235 @@
+.wrapper {
+    width: 100%;
+    padding: 40px 34px;
+}
+.header {
+    padding: 0px 0px 40px 0px;
+}
+.header-home {
+    font-size: 1.4rem;
+    color: #bbbbbb;
+    &:hover {
+        color: var(--primary-color);
+        transition: all 0.3s linear;
+    }
+}
+.header-sneakers {
+    font-size: 1.4rem;
+    color: #bbbbbb;
+    &:hover {
+        color: var(--primary-color);
+        transition: all 0.3s linear;
+    }
+}
+.header-icon {
+    margin: 0px 7px;
+    padding: 0px 5px;
+    font-size: 1rem;
+    color: #bbbbbb;
+}
+.header-product {
+    font-size: 1.4rem;
+    color: var(--primary-color);
+    font-weight: 500;
+}
+.container {
+    display: flex;
+    img {
+        width: 520px;
+        height: 520px;
+        border-radius: 4px;
+    }
+}
+.container-detail {
+    padding-left: 15px;
+    flex: 1;
+}
+.info-upper {
+    padding-bottom: 30px;
+    border-bottom: 1px solid #eeeeee;
+}
+.info-name {
+    font-size: 2.8rem;
+    color: #2f333a;
+}
+.info-brand {
+    margin-top: 10px;
+    font-size: 1.6rem;
+    display: flex;
+    color: #737373;
+}
+.info-brand-detail {
+    color: var(--primary-color) !important;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-left: 5px;
+    cursor: pointer;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+.info-size {
+    font-size: 1.6rem;
+    display: flex;
+    color: #737373;
+}
+.info-size-detail {
+    color: var(--primary-color) !important;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.info-price {
+    color: #2f333a;
+    margin-top: 12px;
+    font-size: 2.8rem;
+    font-weight: 600;
+}
+.info-under {
+    margin-top: 15px;
+}
+.info-under-wrapper {
+    display: flex;
+}
+.info-icon {
+    font-size: 1rem;
+    margin-top: 10px;
+    padding-right: 5px;
+    padding-left: 3px;
+}
+.info-icon-2 {
+    font-size: 1rem;
+    margin-top: 30px;
+    padding-right: 5px;
+    padding-left: 3px;
+}
+.info-cond {
+    display: flex;
+    font-size: 2rem;
+
+    color: #737373;
+}
+.info-cond-detail {
+    font-weight: 500;
+    color: #2f333a !important;
+    margin-left: 5px;
+    font-size: 2rem;
+}
+.info-db {
+    color: #737373;
+    font-size: 2rem;
+    margin-top: 20px;
+}
+.info-db-detail {
+    font-weight: 500;
+    color: #2f333a !important;
+
+    font-size: 2rem;
+}
+.info-gift-1 {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-top: 25px;
+    color: #2f333a;
+    cursor: pointer;
+    &:hover {
+        color: var(--primary-color);
+        transition: all 0.3s linear;
+    }
+}
+.info-gift-2 {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-top: 15px;
+    color: #2f333a;
+    cursor: pointer;
+
+    &:hover {
+        color: var(--primary-color);
+        transition: all 0.3s linear;
+    }
+}
+.info-gift-icon {
+    color: green;
+    padding-right: 5px;
+}
+.btn {
+    display: flex;
+    margin-top: 30px;
+    padding-top: 28px;
+    border-top: 1px solid #eeeeee;
+    button {
+        cursor: pointer;
+        min-width: 180px;
+        padding: 0px 45px;
+        line-height: 51px;
+        font-size: 1.4rem;
+        font-weight: 600;
+        border-radius: 4px;
+        border: none;
+        display: inline-block;
+        border: 1px solid #bbbbbb;
+        text-align: center;
+    }
+}
+.btn-div + .btn-div {
+    margin-left: 5px;
+}
+.btn-cart {
+    color: white;
+    background-color: var(--primary-color);
+    &:hover {
+        background-color: #2f333a !important;
+        transition: all 0.3s linear;
+    }
+}
+.btn-cart-check {
+}
+.btn-cart-check-icon {
+    margin-left: 5px;
+    color: green;
+}
+.btn-wish {
+    max-height: 53px;
+    max-width: 250px;
+    color: #2f333a;
+    &:hover {
+        color: white;
+        background-color: #2f333a !important;
+        transition: all 0.3s linear;
+    }
+}
+.btn-wish-check {
+    padding: 0px 29px !important;
+    text-align: start !important;
+    max-height: 54px;
+    max-width: 250px;
+    font-size: 1.3rem;
+}
+.btn-wish-check-icon {
+    color: var(--primary-color);
+    margin-left: 5px;
+}
+.btn-buy {
+    color: white;
+    background-color: #2f333a !important;
+    &:hover {
+        background-color: var(--primary-color) !important;
+        transition: all 0.3s linear;
+    }
+}
+.product-tippy {
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 0px 8px;
+    min-width: 75px;
+    max-height: 20px;
+    line-height: 20px;
+    min-height: 20px;
+    border-radius: 8px;
+    background: var(--primary-color);
+    box-shadow: 0 0 50px #0000001a;
+    border-radius: 3px;
+}

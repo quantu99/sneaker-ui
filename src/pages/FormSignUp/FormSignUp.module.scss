@@ -1,0 +1,155 @@
+.wrapper {
+    width: 100%;
+}
+.container {
+    color: #eeeeee;
+    position: relative;
+    margin: 45px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #26292e;
+    border-radius: 4px;
+    width: 726px;
+    min-height: 100px;
+    img {
+        width: 726px;
+        filter: brightness(0.3);
+        object-fit: cover;
+    }
+}
+.wrapper-content {
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%, -50%);
+}
+.wrapper-content-success {
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%, -50%);
+}
+.header {
+    font-size: 3.5rem;
+    text-align: center;
+}
+.input-div {
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    input {
+        border-radius: 4px;
+        margin-top: 5px;
+        padding: 0px 10px;
+        outline: none;
+        height: 50px;
+    }
+}
+.input-div + .input-div {
+    margin-top: 30px;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    button {
+        background-color: var(--primary-color);
+        font-size: 1.8rem;
+        border: 1px solid rgb(71, 61, 61);
+        border-radius: 4px;
+        color: white;
+        width: 200px;
+        height: 50px;
+        cursor: pointer;
+        &:hover {
+            opacity: 0.9;
+            transition: all 0.3s linear;
+        }
+        &:active {
+            transform: translateY(5px);
+        }
+    }
+}
+.label {
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+.error-message {
+    font-size: 1.3rem;
+    font-style: italic;
+    color: rgb(245, 129, 129);
+    font-weight: 500;
+    margin-top: 5px;
+    text-decoration: underline wavy rgb(245, 129, 129) 0.5px;
+}
+.content-2 {
+    margin-top: 30px;
+    display: flex;
+}
+.p1 {
+    padding-right: 10px;
+    margin-right: 5px;
+    border-right: 1px solid #eeeeee;
+}
+.p2 {
+    color: #f58181;
+    cursor: pointer;
+    &:hover {
+        transition: all 0.3s linear;
+        color: var(--primary-color);
+    }
+}
+.header-success {
+    font-weight: 800;
+}
+.welcome {
+    color: #f58181;
+    font-weight: 800;
+    animation: bounceIn 2s linear;
+}
+@keyframes bounceIn {
+    0% {
+        transform: scale(0.1);
+        opacity: 0;
+    }
+    60% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+.button-success-signup {
+    position: absolute;
+    min-width: 180px;
+    padding: 0px 45px;
+    top: 57%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 51px;
+    font-size: 1.6rem;
+    font-weight: 500;
+    border-radius: 4px;
+    background: transparent;
+    border: none;
+    display: inline-block;
+    bottom: 137px;
+    z-index: 100;
+    cursor: pointer;
+    color: white;
+    border: 2px solid white;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+    text-align: center;
+    margin-bottom: 200px;
+    &:hover {
+        background: var(--primary-color);
+        border-color: transparent;
+    }
+}
