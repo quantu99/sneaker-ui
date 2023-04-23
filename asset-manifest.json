@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.781391a1.css",
-    "main.js": "/static/js/main.89fc5cfd.js",
-    "static/js/787.fd4e04bf.chunk.js": "/static/js/787.fd4e04bf.chunk.js",
-    "static/media/song2.mp3": "/static/media/song2.224323a05596c0934493.mp3",
-    "static/media/first.jpg": "/static/media/first.230fbaf4342bcdca892e.jpg",
-    "static/media/fifth.jpg": "/static/media/fifth.12443c958547fd9f7ea9.jpg",
-    "static/media/fouth.jpg": "/static/media/fouth.85a5bade4d6fe0ea86ff.jpg",
-    "static/media/second.jpg": "/static/media/second.e54421f7ad017e1c40df.jpg",
-    "static/media/third.jpg": "/static/media/third.76b6ce6ba694cc492a38.jpg",
-    "index.html": "/index.html",
-    "main.781391a1.css.map": "/static/css/main.781391a1.css.map",
-    "main.89fc5cfd.js.map": "/static/js/main.89fc5cfd.js.map",
-    "787.fd4e04bf.chunk.js.map": "/static/js/787.fd4e04bf.chunk.js.map"
+    "main.css": "/sneaker-ui/static/css/main.781391a1.css",
+    "main.js": "/sneaker-ui/static/js/main.5136c522.js",
+    "static/js/787.fd4e04bf.chunk.js": "/sneaker-ui/static/js/787.fd4e04bf.chunk.js",
+    "static/media/song2.mp3": "/sneaker-ui/static/media/song2.224323a05596c0934493.mp3",
+    "static/media/first.jpg": "/sneaker-ui/static/media/first.230fbaf4342bcdca892e.jpg",
+    "static/media/fifth.jpg": "/sneaker-ui/static/media/fifth.12443c958547fd9f7ea9.jpg",
+    "static/media/fouth.jpg": "/sneaker-ui/static/media/fouth.85a5bade4d6fe0ea86ff.jpg",
+    "static/media/second.jpg": "/sneaker-ui/static/media/second.e54421f7ad017e1c40df.jpg",
+    "static/media/third.jpg": "/sneaker-ui/static/media/third.76b6ce6ba694cc492a38.jpg",
+    "index.html": "/sneaker-ui/index.html",
+    "main.781391a1.css.map": "/sneaker-ui/static/css/main.781391a1.css.map",
+    "main.5136c522.js.map": "/sneaker-ui/static/js/main.5136c522.js.map",
+    "787.fd4e04bf.chunk.js.map": "/sneaker-ui/static/js/787.fd4e04bf.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.781391a1.css",
-    "static/js/main.89fc5cfd.js"
+    "static/js/main.5136c522.js"
   ]
 }
