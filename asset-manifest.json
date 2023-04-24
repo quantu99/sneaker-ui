@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "//quantu99.github.io/static/css/main.bb16718e.css",
-    "main.js": "//quantu99.github.io/static/js/main.50f4e60f.js",
-    "static/js/787.fd4e04bf.chunk.js": "//quantu99.github.io/static/js/787.fd4e04bf.chunk.js",
-    "static/media/song2.mp3": "//quantu99.github.io/static/media/song2.224323a05596c0934493.mp3",
-    "static/media/first.jpg": "//quantu99.github.io/static/media/first.230fbaf4342bcdca892e.jpg",
-    "static/media/fifth.jpg": "//quantu99.github.io/static/media/fifth.12443c958547fd9f7ea9.jpg",
-    "static/media/fouth.jpg": "//quantu99.github.io/static/media/fouth.85a5bade4d6fe0ea86ff.jpg",
-    "static/media/second.jpg": "//quantu99.github.io/static/media/second.e54421f7ad017e1c40df.jpg",
-    "static/media/third.jpg": "//quantu99.github.io/static/media/third.76b6ce6ba694cc492a38.jpg",
-    "index.html": "//quantu99.github.io/index.html",
-    "main.bb16718e.css.map": "//quantu99.github.io/static/css/main.bb16718e.css.map",
-    "main.50f4e60f.js.map": "//quantu99.github.io/static/js/main.50f4e60f.js.map",
-    "787.fd4e04bf.chunk.js.map": "//quantu99.github.io/static/js/787.fd4e04bf.chunk.js.map"
+    "main.css": "/quantu99.github.io/static/css/main.bb16718e.css",
+    "main.js": "/quantu99.github.io/static/js/main.6bb3b051.js",
+    "static/js/787.fd4e04bf.chunk.js": "/quantu99.github.io/static/js/787.fd4e04bf.chunk.js",
+    "static/media/song2.mp3": "/quantu99.github.io/static/media/song2.224323a05596c0934493.mp3",
+    "static/media/first.jpg": "/quantu99.github.io/static/media/first.230fbaf4342bcdca892e.jpg",
+    "static/media/fifth.jpg": "/quantu99.github.io/static/media/fifth.12443c958547fd9f7ea9.jpg",
+    "static/media/fouth.jpg": "/quantu99.github.io/static/media/fouth.85a5bade4d6fe0ea86ff.jpg",
+    "static/media/second.jpg": "/quantu99.github.io/static/media/second.e54421f7ad017e1c40df.jpg",
+    "static/media/third.jpg": "/quantu99.github.io/static/media/third.76b6ce6ba694cc492a38.jpg",
+    "index.html": "/quantu99.github.io/index.html",
+    "main.bb16718e.css.map": "/quantu99.github.io/static/css/main.bb16718e.css.map",
+    "main.6bb3b051.js.map": "/quantu99.github.io/static/js/main.6bb3b051.js.map",
+    "787.fd4e04bf.chunk.js.map": "/quantu99.github.io/static/js/787.fd4e04bf.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.bb16718e.css",
-    "static/js/main.50f4e60f.js"
+    "static/js/main.6bb3b051.js"
   ]
 }
