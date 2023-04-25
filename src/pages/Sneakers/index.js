@@ -7,7 +7,7 @@ import classNames from 'classnames/bind';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGrip } from '@fortawesome/free-solid-svg-icons';
 const cx = classNames.bind(styles);
-function Sneakers({ cartItems, handleAddProducts, wishItems, handleAddWishProducts }) {
+function Sneakers({ cartItems, handleAddProducts, wishItems, handleAddWishProducts, productItems }) {
     return (
         <div>
             <Header cartItems={cartItems} wishItems={wishItems} />
@@ -26,6 +26,7 @@ function Sneakers({ cartItems, handleAddProducts, wishItems, handleAddWishProduc
                         handleAddProducts={handleAddProducts}
                         wishItems={wishItems}
                         handleAddWishProducts={handleAddWishProducts}
+                        productItems={productItems}
                     />
                 </div>
             </div>

@@ -19,18 +19,23 @@
         height: 70px;
         border: 1px solid #d4d4d4;
     }
-}
-.info {
-    display: flex;
-    flex-direction: column;
-    cursor: pointer;
+    &:hover {
+        transition: all 0.3s linear;
+        background-color: #d4d4d4;
+    }
     &:hover .name,
     &:hover .price {
         transition: all 0.3s linear;
         color: var(--primary-color);
     }
 }
+.info {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
 .name {
+    text-transform: uppercase;
     color: #2f333a;
     font-size: 1.4rem;
     padding: 8px 8px 4px;

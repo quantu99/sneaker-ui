@@ -4,22 +4,20 @@
     left: 50%;
     transform: translate(-50%, -50%);
     min-width: 180px;
-    padding: 0px 45px;
     line-height: 51px;
+    padding: 0px 45px;
     font-size: 1.6rem;
     font-weight: 500;
+    border: 2px solid white;
     border-radius: 4px;
+    color: white;
     background: transparent;
-    border: none;
+    text-align: center;
     display: inline-block;
-
     z-index: 100;
     cursor: pointer;
-    color: white;
-    border: 2px solid white;
     transition: all 0.3s ease-in-out;
     text-decoration: none;
-    text-align: center;
     &:hover {
         background: var(--primary-color);
         border-color: transparent;

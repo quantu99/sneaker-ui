@@ -9,7 +9,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronRight, faCircleCheck, faHeart, faSquareCheck } from '@fortawesome/free-solid-svg-icons';
 import { faCircle } from '@fortawesome/free-solid-svg-icons';
 const cx = classNames.bind(styles);
-const SneakersDetail = ({ handleAddProducts, cartItems, wishItems, handleAddWishProducts }) => {
+const SneakersDetail = ({ handleAddProducts, cartItems, wishItems, handleAddWishProducts, productItems }) => {
     const [iconVisible, setIconVisible] = useState(true);
     const [textVisible, setTextVisible] = useState(true);
     function toggleIcon() {
@@ -18,17 +18,9 @@ const SneakersDetail = ({ handleAddProducts, cartItems, wishItems, handleAddWish
     function toggleText() {
         setTextVisible(!textVisible);
     }
-    const [products, setProducts] = useState([]);
-    useEffect(() => {
-        fetch(`http://localhost:3000/data/`)
-            .then((res) => res.json())
-            .then((res) => {
-                setProducts(res);
-            });
-    }, []);
 
     const { productId } = useParams();
-    const product = products.find((product) => product.id == productId);
+    const product = productItems.find((product) => product.id == productId);
     return (
         <div>
             <Header cartItems={cartItems} wishItems={wishItems} />

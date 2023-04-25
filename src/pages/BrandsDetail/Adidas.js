@@ -113,14 +113,13 @@ const AdidasItems = ({ product, handleAddProducts, handleAddWishProducts }) => {
         </div>
     );
 };
-function Adidas({ cartItems, handleAddProducts, wishItems, handleAddWishProducts }) {
-    const [products, setProducts] = useState([]);
+function Adidas({ cartItems, handleAddProducts, wishItems, handleAddWishProducts, productItems }) {
+    const [brand, setBrand] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:3000/data?brand=adidas')
-            .then((res) => res.json())
-            .then((res) => {
-                setProducts(res);
-            });
+        const products = productItems.filter((products) => {
+            return products.brand.includes('adidas');
+        });
+        setBrand(products);
     }, []);
     return (
         <div className={cx('wrapper')}>
@@ -265,7 +264,7 @@ function Adidas({ cartItems, handleAddProducts, wishItems, handleAddWishProducts
                 <div className={cx('products')}>
                     <h1 className={cx('products-header')}>PRODUCTS</h1>
                     <div className={cx('products-detail')}>
-                        {products.map((product) => (
+                        {brand.map((product) => (
                             <AdidasItems
                                 product={product}
                                 handleAddProducts={handleAddProducts}

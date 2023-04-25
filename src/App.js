@@ -3,7 +3,9 @@ import { useState } from 'react';
 import { Fragment } from 'react';
 import { publicRoutes } from './routes';
 import DefaultLayout from './components/Layout/DefaultLayout';
+import data from './Data/Data';
 function App() {
+    const { productItems } = data;
     const [cartItems, setCartItems] = useState([]);
     const [wishItems, setWishItems] = useState([]);
     const handleAddWishProducts = (product) => {
@@ -67,6 +69,7 @@ function App() {
                                 element={
                                     <Layout>
                                         <Page
+                                            productItems={productItems}
                                             handleRemoveProducts={handleRemoveProducts}
                                             handleAddProducts={handleAddProducts}
                                             cartItems={cartItems}

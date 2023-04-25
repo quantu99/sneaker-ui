@@ -8,7 +8,6 @@ import Adidas from '../pages/BrandsDetail/Adidas';
 import Gucci from '../pages/BrandsDetail/Gucci';
 import Cart from '../pages/Cart/Cart';
 import WistList from '../pages/WishList/WishList';
-import FormSignUp from '../pages/FormSignUp/FormSignUp';
 import Form from '../pages/FormSignUp/Form';
 
 const publicRoutes = [

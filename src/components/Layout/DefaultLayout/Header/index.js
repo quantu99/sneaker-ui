@@ -20,7 +20,7 @@ import Wrapper from '../../../Popper/Wrapper';
 import Search from '../../Search';
 
 const cx = classNames.bind(styles);
-function Header({ cartItems, wishItems }) {
+function Header({ cartItems, wishItems, productItems }) {
     return (
         <div className={cx('header_wrapper')}>
             <div className={cx('header_inner')}>
@@ -198,7 +198,7 @@ function Header({ cartItems, wishItems }) {
                                 <span className={cx('phone')}>(+84) 98 858 57 94</span>
                             </div>
                         </div>
-                        <Search></Search>
+                        <Search productItems={productItems}></Search>
                         <div className={cx('under_inner-right')}>
                             <div className={cx('register')}>
                                 <div className={cx('register-logo')}>

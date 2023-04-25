@@ -114,14 +114,13 @@ const JordanItems = ({ product, handleAddProducts, handleAddWishProducts }) => {
         </div>
     );
 };
-function Jordan({ cartItems, handleAddProducts, wishItems, handleAddWishProducts }) {
-    const [products, setProducts] = useState([]);
+function Jordan({ cartItems, handleAddProducts, wishItems, handleAddWishProducts, productItems }) {
+    const [brand, setBrand] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:3000/data?brand=jordan')
-            .then((res) => res.json())
-            .then((res) => {
-                setProducts(res);
-            });
+        const products = productItems.filter((products) => {
+            return products.brand.includes('jordan');
+        });
+        setBrand(products);
     }, []);
     return (
         <div className={cx('wrapper')}>
@@ -266,7 +265,7 @@ function Jordan({ cartItems, handleAddProducts, wishItems, handleAddWishProducts
                 <div className={cx('products')}>
                     <h1 className={cx('products-header')}>PRODUCTS</h1>
                     <div className={cx('products-detail')}>
-                        {products.map((product) => (
+                        {brand.map((product) => (
                             <JordanItems
                                 product={product}
                                 handleAddProducts={handleAddProducts}
