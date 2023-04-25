@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/quantu99.github.io/static/css/main.49bb2e9c.css",
-    "main.js": "/quantu99.github.io/static/js/main.d452acf0.js",
-    "static/js/787.fd4e04bf.chunk.js": "/quantu99.github.io/static/js/787.fd4e04bf.chunk.js",
-    "static/media/song2.mp3": "/quantu99.github.io/static/media/song2.224323a05596c0934493.mp3",
-    "static/media/first.jpg": "/quantu99.github.io/static/media/first.230fbaf4342bcdca892e.jpg",
-    "static/media/fifth.jpg": "/quantu99.github.io/static/media/fifth.12443c958547fd9f7ea9.jpg",
-    "static/media/fouth.jpg": "/quantu99.github.io/static/media/fouth.85a5bade4d6fe0ea86ff.jpg",
-    "static/media/second.jpg": "/quantu99.github.io/static/media/second.e54421f7ad017e1c40df.jpg",
-    "static/media/third.jpg": "/quantu99.github.io/static/media/third.76b6ce6ba694cc492a38.jpg",
-    "index.html": "/quantu99.github.io/index.html",
-    "main.49bb2e9c.css.map": "/quantu99.github.io/static/css/main.49bb2e9c.css.map",
-    "main.d452acf0.js.map": "/quantu99.github.io/static/js/main.d452acf0.js.map",
-    "787.fd4e04bf.chunk.js.map": "/quantu99.github.io/static/js/787.fd4e04bf.chunk.js.map"
+    "main.css": "/sneaker-ui/static/css/main.81d7d242.css",
+    "main.js": "/sneaker-ui/static/js/main.337db418.js",
+    "static/js/787.fd4e04bf.chunk.js": "/sneaker-ui/static/js/787.fd4e04bf.chunk.js",
+    "static/media/song2.mp3": "/sneaker-ui/static/media/song2.224323a05596c0934493.mp3",
+    "static/media/first.jpg": "/sneaker-ui/static/media/first.230fbaf4342bcdca892e.jpg",
+    "static/media/fifth.jpg": "/sneaker-ui/static/media/fifth.12443c958547fd9f7ea9.jpg",
+    "static/media/fouth.jpg": "/sneaker-ui/static/media/fouth.85a5bade4d6fe0ea86ff.jpg",
+    "static/media/second.jpg": "/sneaker-ui/static/media/second.e54421f7ad017e1c40df.jpg",
+    "static/media/third.jpg": "/sneaker-ui/static/media/third.76b6ce6ba694cc492a38.jpg",
+    "index.html": "/sneaker-ui/index.html",
+    "main.81d7d242.css.map": "/sneaker-ui/static/css/main.81d7d242.css.map",
+    "main.337db418.js.map": "/sneaker-ui/static/js/main.337db418.js.map",
+    "787.fd4e04bf.chunk.js.map": "/sneaker-ui/static/js/787.fd4e04bf.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.49bb2e9c.css",
-    "static/js/main.d452acf0.js"
+    "static/css/main.81d7d242.css",
+    "static/js/main.337db418.js"
   ]
 }
