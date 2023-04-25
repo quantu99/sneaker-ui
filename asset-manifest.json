@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/quantu99.github.io/static/css/main.bb16718e.css",
-    "main.js": "/quantu99.github.io/static/js/main.6bb3b051.js",
+    "main.css": "/quantu99.github.io/static/css/main.49bb2e9c.css",
+    "main.js": "/quantu99.github.io/static/js/main.d452acf0.js",
     "static/js/787.fd4e04bf.chunk.js": "/quantu99.github.io/static/js/787.fd4e04bf.chunk.js",
     "static/media/song2.mp3": "/quantu99.github.io/static/media/song2.224323a05596c0934493.mp3",
     "static/media/first.jpg": "/quantu99.github.io/static/media/first.230fbaf4342bcdca892e.jpg",
@@ -10,12 +10,12 @@
     "static/media/second.jpg": "/quantu99.github.io/static/media/second.e54421f7ad017e1c40df.jpg",
     "static/media/third.jpg": "/quantu99.github.io/static/media/third.76b6ce6ba694cc492a38.jpg",
     "index.html": "/quantu99.github.io/index.html",
-    "main.bb16718e.css.map": "/quantu99.github.io/static/css/main.bb16718e.css.map",
-    "main.6bb3b051.js.map": "/quantu99.github.io/static/js/main.6bb3b051.js.map",
+    "main.49bb2e9c.css.map": "/quantu99.github.io/static/css/main.49bb2e9c.css.map",
+    "main.d452acf0.js.map": "/quantu99.github.io/static/js/main.d452acf0.js.map",
     "787.fd4e04bf.chunk.js.map": "/quantu99.github.io/static/js/787.fd4e04bf.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bb16718e.css",
-    "static/js/main.6bb3b051.js"
+    "static/css/main.49bb2e9c.css",
+    "static/js/main.d452acf0.js"
   ]
 }
