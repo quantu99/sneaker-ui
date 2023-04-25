@@ -1,21 +1,33 @@
 {
   "files": {
     "main.css": "/sneaker-ui/static/css/main.81d7d242.css",
-    "main.js": "/sneaker-ui/static/js/main.d7f1d4dc.js",
+    "main.js": "/sneaker-ui/static/js/main.b65ea442.js",
     "static/js/787.fd4e04bf.chunk.js": "/sneaker-ui/static/js/787.fd4e04bf.chunk.js",
     "static/media/song2.mp3": "/sneaker-ui/static/media/song2.224323a05596c0934493.mp3",
     "static/media/first.jpg": "/sneaker-ui/static/media/first.230fbaf4342bcdca892e.jpg",
+    "static/media/img6.jpg": "/sneaker-ui/static/media/img6.970441985feb531348db.jpg",
+    "static/media/img1.jpg": "/sneaker-ui/static/media/img1.ebcf6804819ed3fadc4b.jpg",
+    "static/media/img4.jpg": "/sneaker-ui/static/media/img4.9abaa18aa7a3a6fde977.jpg",
+    "static/media/img11.jpg": "/sneaker-ui/static/media/img11.b150bb975695417d4dfa.jpg",
     "static/media/fifth.jpg": "/sneaker-ui/static/media/fifth.12443c958547fd9f7ea9.jpg",
+    "static/media/img2.jpg": "/sneaker-ui/static/media/img2.65cbf89f3be64d6758c7.jpg",
+    "static/media/img8.jpg": "/sneaker-ui/static/media/img8.a6e7fab862c5fdeef2f8.jpg",
+    "static/media/img3.jpg": "/sneaker-ui/static/media/img3.251bbefc1882e016bee6.jpg",
     "static/media/fouth.jpg": "/sneaker-ui/static/media/fouth.85a5bade4d6fe0ea86ff.jpg",
+    "static/media/img9.jpg": "/sneaker-ui/static/media/img9.ad44a0ff484084dc9f77.jpg",
+    "static/media/img5.jpg": "/sneaker-ui/static/media/img5.231921d1ae40f547abf8.jpg",
+    "static/media/img7.jpg": "/sneaker-ui/static/media/img7.3f0c508893c2290dde1c.jpg",
+    "static/media/img10.jpg": "/sneaker-ui/static/media/img10.4e8cafe808c1ab50d2e5.jpg",
+    "static/media/img12.jpg": "/sneaker-ui/static/media/img12.05bb37034467e75692c8.jpg",
     "static/media/second.jpg": "/sneaker-ui/static/media/second.e54421f7ad017e1c40df.jpg",
     "static/media/third.jpg": "/sneaker-ui/static/media/third.76b6ce6ba694cc492a38.jpg",
     "index.html": "/sneaker-ui/index.html",
     "main.81d7d242.css.map": "/sneaker-ui/static/css/main.81d7d242.css.map",
-    "main.d7f1d4dc.js.map": "/sneaker-ui/static/js/main.d7f1d4dc.js.map",
+    "main.b65ea442.js.map": "/sneaker-ui/static/js/main.b65ea442.js.map",
     "787.fd4e04bf.chunk.js.map": "/sneaker-ui/static/js/787.fd4e04bf.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.81d7d242.css",
-    "static/js/main.d7f1d4dc.js"
+    "static/js/main.b65ea442.js"
   ]
 }
