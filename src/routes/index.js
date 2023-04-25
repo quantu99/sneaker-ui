@@ -11,7 +11,7 @@ import WistList from '../pages/WishList/WishList';
 import Form from '../pages/FormSignUp/Form';
 
 const publicRoutes = [
-    { path: '/', component: Home, layout: null },
+    { path: '/sneaker-ui', component: Home, layout: null },
     { path: '/accessories', component: Accessories, layout: null },
     { path: '/sneakers', component: Sneakers, layout: null },
     { path: '/sneakers/:productId', component: SneakersDetail, layout: null },
