@@ -1,13 +1,16 @@
 {
   "files": {
-    "main.css": "/sneaker-ui/static/css/main.81d7d242.css",
-    "main.js": "/sneaker-ui/static/js/main.b65ea442.js",
+    "main.css": "/sneaker-ui/static/css/main.f4b309f9.css",
+    "main.js": "/sneaker-ui/static/js/main.e451b922.js",
     "static/js/787.fd4e04bf.chunk.js": "/sneaker-ui/static/js/787.fd4e04bf.chunk.js",
     "static/media/song2.mp3": "/sneaker-ui/static/media/song2.224323a05596c0934493.mp3",
     "static/media/first.jpg": "/sneaker-ui/static/media/first.230fbaf4342bcdca892e.jpg",
+    "static/media/puma1.jpg": "/sneaker-ui/static/media/puma1.6d0ed61a1fe7ef74936d.jpg",
     "static/media/img6.jpg": "/sneaker-ui/static/media/img6.970441985feb531348db.jpg",
     "static/media/img1.jpg": "/sneaker-ui/static/media/img1.ebcf6804819ed3fadc4b.jpg",
     "static/media/img4.jpg": "/sneaker-ui/static/media/img4.9abaa18aa7a3a6fde977.jpg",
+    "static/media/af1wheat.jpg": "/sneaker-ui/static/media/af1wheat.8791ca5d563eba89cc13.jpg",
+    "static/media/pumawhitegum.jpg": "/sneaker-ui/static/media/pumawhitegum.e38b359f94d178346de0.jpg",
     "static/media/img11.jpg": "/sneaker-ui/static/media/img11.b150bb975695417d4dfa.jpg",
     "static/media/fifth.jpg": "/sneaker-ui/static/media/fifth.12443c958547fd9f7ea9.jpg",
     "static/media/img2.jpg": "/sneaker-ui/static/media/img2.65cbf89f3be64d6758c7.jpg",
@@ -22,12 +25,12 @@
     "static/media/second.jpg": "/sneaker-ui/static/media/second.e54421f7ad017e1c40df.jpg",
     "static/media/third.jpg": "/sneaker-ui/static/media/third.76b6ce6ba694cc492a38.jpg",
     "index.html": "/sneaker-ui/index.html",
-    "main.81d7d242.css.map": "/sneaker-ui/static/css/main.81d7d242.css.map",
-    "main.b65ea442.js.map": "/sneaker-ui/static/js/main.b65ea442.js.map",
+    "main.f4b309f9.css.map": "/sneaker-ui/static/css/main.f4b309f9.css.map",
+    "main.e451b922.js.map": "/sneaker-ui/static/js/main.e451b922.js.map",
     "787.fd4e04bf.chunk.js.map": "/sneaker-ui/static/js/787.fd4e04bf.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.81d7d242.css",
-    "static/js/main.b65ea442.js"
+    "static/css/main.f4b309f9.css",
+    "static/js/main.e451b922.js"
   ]
 }
