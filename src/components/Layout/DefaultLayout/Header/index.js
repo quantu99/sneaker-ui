@@ -25,7 +25,7 @@ function Header({ cartItems, wishItems, productItems }) {
         <div className={cx('header_wrapper')}>
             <div className={cx('header_inner')}>
                 <div className={cx('header_upper')}>
-                    <Link to="/">
+                    <Link to="/sneaker-ui">
                         <img
                             className={cx('header_upper-image')}
                             src="https://scontent.fvca1-3.fna.fbcdn.net/v/t1.15752-9/338080670_915671709686265_8393406944187007139_n.png?_nc_cat=110&ccb=1-7&_nc_sid=ae9488&_nc_ohc=MWmUCmxljc8AX_wUeCR&_nc_ht=scontent.fvca1-3.fna&oh=03_AdS8zvTwi1LHHD4gtohmGYpsoa1JOGHIDmuytqyz6MxYYw&oe=644B04DF"
@@ -35,7 +35,7 @@ function Header({ cartItems, wishItems, productItems }) {
                     <div className={cx('header_upper-menu')}>
                         <ul className={cx('header_upper-menu-list')}>
                             <li className={cx('header_upper-menu-list-item')}>
-                                <Link to="/">HOME</Link>
+                                <Link to="/sneaker-ui">HOME</Link>
                                 {/* <FontAwesomeIcon className={cx('upper-icon')} icon={faChevronDown} /> */}
                             </li>
                             <Tippy
@@ -67,8 +67,8 @@ function Header({ cartItems, wishItems, productItems }) {
                                                         <Link to={'/sneakers/jordan'}>
                                                             <li className={cx('menu-children')}>Jordan</li>
                                                         </Link>
-                                                        <Link to={'/sneakers/gucci'}>
-                                                            <li className={cx('menu-children')}>Gucci</li>
+                                                        <Link to={'/sneakers/puma'}>
+                                                            <li className={cx('menu-children')}>Puma</li>
                                                         </Link>
                                                     </ul>
                                                 </li>

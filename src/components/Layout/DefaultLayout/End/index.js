@@ -52,8 +52,8 @@ function End() {
                         <Link className={cx('end-link')} to={'/sneakers/jordan'}>
                             <li className={cx('end-list-item')}>Jordan</li>
                         </Link>
-                        <Link className={cx('end-link')} to={'/sneakers/gucci'}>
-                            <li className={cx('end-list-item')}>Gucci</li>
+                        <Link className={cx('end-link')} to={'/sneakers/puma'}>
+                            <li className={cx('end-list-item')}>Puma</li>
                         </Link>
 
                         <Link className={cx('end-link')} to={'/sneakers'}>

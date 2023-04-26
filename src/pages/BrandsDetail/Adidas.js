@@ -175,12 +175,12 @@ function Adidas({ cartItems, handleAddProducts, wishItems, handleAddWishProducts
                                 Jordan
                             </li>
                             <li className={cx('brand')}>
-                                <Link className={cx('checkbox')} to={'/sneakers/gucci'}>
+                                <Link className={cx('checkbox')} to={'/sneakers/puma'}>
                                     <FontAwesomeIcon className={cx('square')} icon={faSquare} />
 
                                     <FontAwesomeIcon className={cx('square-check')} icon={faSquareCheck} />
                                 </Link>
-                                Gucci
+                                Puma
                             </li>
                         </ul>
 
@@ -211,7 +211,7 @@ function Adidas({ cartItems, handleAddProducts, wishItems, handleAddWishProducts
                                 đ 3.000.000 - đ 5.000.000
                             </li>
                             <li className={cx('brand')}>
-                                <Link className={cx('checkbox')} to={'/sneakers/gucci'}>
+                                <Link className={cx('checkbox')} to={'/sneakers/puma'}>
                                     <FontAwesomeIcon className={cx('square')} icon={faSquare} />
 
                                     <FontAwesomeIcon className={cx('square-check')} icon={faSquareCheck} />

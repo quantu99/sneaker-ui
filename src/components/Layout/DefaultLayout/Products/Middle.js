@@ -29,9 +29,7 @@ const ProductsItem = ({ product, handleAddProducts, handleAddWishProducts, handl
                     <Link to={`/sneakers/${product.id}`}>
                         <img className={cx('product_img')} src={product.img} />
                         <div className={cx('product_caption')}>
-                            <h3>
-                                <a href="">{product.name}</a>
-                            </h3>
+                            <h3 className={cx('product_name')}>{product.name}</h3>
                             <p className={cx('product_type')}>{product.type}</p>
                             <h3 className={cx('product_price')}>đ {product.price}</h3>
                         </div>

@@ -4,22 +4,13 @@ import classNames from 'classnames/bind';
 import { Link } from 'react-router-dom';
 import { faSquareCheck } from '@fortawesome/free-solid-svg-icons';
 import { faSquare } from '@fortawesome/free-regular-svg-icons';
-import { useState, useEffect } from 'react';
 const cx = classNames.bind(styles);
 
 function Sidebar({ className }) {
-    const [products, setProducts] = useState([]);
     const classes = cx('container', {
         [classNames]: className,
     });
 
-    useEffect(() => {
-        fetch(`http://localhost:3000/data/`)
-            .then((res) => res.json())
-            .then((res) => {
-                setProducts(res);
-            });
-    }, []);
     return (
         <div className={classes}>
             <h3 className={cx('header')}>CATEGORIES</h3>
@@ -48,12 +39,12 @@ function Sidebar({ className }) {
                     Jordan
                 </li>
                 <li className={cx('brand')}>
-                    <Link className={cx('checkbox')} to={'/sneakers/gucci'}>
+                    <Link className={cx('checkbox')} to={'/sneakers/puma'}>
                         <FontAwesomeIcon className={cx('square')} icon={faSquare} />
 
                         <FontAwesomeIcon className={cx('square-check')} icon={faSquareCheck} />
                     </Link>
-                    Gucci
+                    Puma
                 </li>
             </ul>
 

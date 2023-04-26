@@ -23,7 +23,7 @@ const SneakersDetail = ({ handleAddProducts, cartItems, wishItems, handleAddWish
     const product = productItems.find((product) => product.id == productId);
     return (
         <div>
-            <Header cartItems={cartItems} wishItems={wishItems} />
+            <Header cartItems={cartItems} wishItems={wishItems} productItems={productItems} />
             {product ? (
                 <div className={cx('wrapper')}>
                     <div className={cx('header')}>

@@ -10,7 +10,7 @@ const cx = classNames.bind(styles);
 function Sneakers({ cartItems, handleAddProducts, wishItems, handleAddWishProducts, productItems }) {
     return (
         <div>
-            <Header cartItems={cartItems} wishItems={wishItems} />
+            <Header cartItems={cartItems} wishItems={wishItems} productItems={productItems} />
             <div className={cx('container')}>
                 <aside className={cx('wrapper-3')}>
                     <Sidebar></Sidebar>

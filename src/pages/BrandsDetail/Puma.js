@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { useState } from 'react';
-import styles from './Gucci.module.scss';
+import styles from './Puma.module.scss';
 import classNames from 'classnames/bind';
 import { Link } from 'react-router-dom';
 import Tippy from '@tippyjs/react/headless';
@@ -16,10 +16,9 @@ import {
     faChevronRight,
 } from '@fortawesome/free-solid-svg-icons';
 import Header from '../../components/Layout/DefaultLayout/Header';
-import Sidebar from '../../components/Layout/DefaultLayout/Sidebar';
 import End from '../../components/Layout/DefaultLayout/End';
 const cx = classNames.bind(styles);
-const GucciItems = ({ product, handleAddProducts, handleAddWishProducts }) => {
+const PumaItems = ({ product, handleAddProducts, handleAddWishProducts }) => {
     const [iconVisible, setIconVisible] = useState(true);
     const [textVisible, setTextVisible] = useState(true);
     function toggleIcon() {
@@ -114,11 +113,11 @@ const GucciItems = ({ product, handleAddProducts, handleAddWishProducts }) => {
         </div>
     );
 };
-function Gucci({ cartItems, handleAddProducts, wishItems, handleAddWishProducts, productItems }) {
+function Puma({ cartItems, handleAddProducts, wishItems, handleAddWishProducts, productItems }) {
     const [brand, setBrand] = useState([]);
     useEffect(() => {
         const products = productItems.filter((products) => {
-            return products.brand.includes('gucci');
+            return products.brand.includes('puma');
         });
         setBrand(products);
     }, []);
@@ -140,8 +139,8 @@ function Gucci({ cartItems, handleAddProducts, wishItems, handleAddWishProducts,
                 </Link>
                 <FontAwesomeIcon className={cx('header-icon')} icon={faChevronRight} />
 
-                <Link to={'/sneakers/gucci'} className={cx('header-product')}>
-                    Gucci
+                <Link to={'/sneakers/puma'} className={cx('header-product')}>
+                    Puma
                 </Link>
             </div>
             <div className={cx('wrapper-2')}>
@@ -173,15 +172,15 @@ function Gucci({ cartItems, handleAddProducts, wishItems, handleAddWishProducts,
                                 Jordan
                             </li>
                             <li className={cx('brand')}>
-                                <Link className={cx('checkbox')} to={'/sneakers/gucci'}>
-                                    <FontAwesomeIcon className={cx('square', 'gucci')} icon={faSquare} />
+                                <Link className={cx('checkbox')} to={'/sneakers/puma'}>
+                                    <FontAwesomeIcon className={cx('square', 'puma')} icon={faSquare} />
 
                                     <FontAwesomeIcon
-                                        className={cx('square-check', 'gucci-check')}
+                                        className={cx('square-check', 'puma-check')}
                                         icon={faSquareCheck}
                                     />
                                 </Link>
-                                Gucci
+                                Puma
                             </li>
                         </ul>
 
@@ -212,7 +211,7 @@ function Gucci({ cartItems, handleAddProducts, wishItems, handleAddWishProducts,
                                 đ 3.000.000 - đ 5.000.000
                             </li>
                             <li className={cx('brand')}>
-                                <Link className={cx('checkbox')} to={'/sneakers/gucci'}>
+                                <Link className={cx('checkbox')} to={'/sneakers/puma'}>
                                     <FontAwesomeIcon className={cx('square')} icon={faSquare} />
 
                                     <FontAwesomeIcon className={cx('square-check')} icon={faSquareCheck} />
@@ -266,7 +265,7 @@ function Gucci({ cartItems, handleAddProducts, wishItems, handleAddWishProducts,
                     <h1 className={cx('products-header')}>PRODUCTS</h1>
                     <div className={cx('products-detail')}>
                         {brand.map((product) => (
-                            <GucciItems
+                            <PumaItems
                                 product={product}
                                 handleAddProducts={handleAddProducts}
                                 handleAddWishProducts={handleAddWishProducts}
@@ -280,4 +279,4 @@ function Gucci({ cartItems, handleAddProducts, wishItems, handleAddWishProducts,
     );
 }
 
-export default Gucci;
+export default Puma;

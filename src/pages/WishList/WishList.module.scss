@@ -52,8 +52,10 @@
 .info-2 {
 }
 .info-3 {
+    display: flex;
 }
 .info-name {
+    text-transform: uppercase;
     color: var(--primary-color);
     padding: 10px 0px 10px 20px;
     font-weight: 500;
@@ -69,18 +71,19 @@
     font-size: 1.8rem;
     padding: 10px 0px 0px 20px;
 }
-.info-remove {
+.info-add {
+}
+.info-add-btn {
     color: white;
+    border: none;
     border-radius: 4px;
     width: 144px;
     height: 38px;
     display: flex;
-    /* text-align: center; */
     justify-content: center;
     justify-self: center;
     align-items: center;
     background-color: green;
-    font-size: 1.8rem;
     cursor: pointer;
     margin-top: 1px;
     margin-left: 16px;
@@ -88,8 +91,36 @@
         transition: all 0.3s ease-in;
         background-color: #2f333a;
     }
+    &:active {
+        transition: all 0.3s ease-in;
+        transform: translateY(8px);
+    }
 }
-.remove-icon {
+.info-added {
+    color: white;
+    border: none;
+    border-radius: 4px;
+    width: 144px;
+    height: 38px;
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 1px;
+    margin-left: 16px;
+    &:hover {
+        transition: all 0.3s ease-in;
+        background-color: #2f333a;
+    }
+    &:active {
+        transition: all 0.3s ease-in;
+        transform: translateY(8px);
+    }
+}
+.info-remove {
+    margin-top: 4px;
+    margin-left: 20px;
     cursor: pointer;
     &:hover {
         color: var(--primary-color);
