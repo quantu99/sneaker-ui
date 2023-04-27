@@ -43,10 +43,10 @@ const InstaItems = ({ item }) => (
         </a>
     </div>
 );
-function Insta() {
+function Insta({ momentItems }) {
     return (
         <div className={cx('wrapper')}>
-            {items.map((item) => (
+            {momentItems.map((item) => (
                 <InstaItems item={item} />
             ))}
         </div>

@@ -6,9 +6,11 @@ function Home({
     handleAddWishProducts,
     handleRemoveWishProducts,
     productItems,
+    momentItems,
 }) {
     return (
         <DefaultLayout
+            momentItems={momentItems}
             productItems={productItems}
             cartItems={cartItems}
             handleAddProducts={handleAddProducts}

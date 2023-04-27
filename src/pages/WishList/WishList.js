@@ -6,6 +6,7 @@ import styles from './WishList.module.scss';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import classNames from 'classnames/bind';
+import { faHeart } from '@fortawesome/free-solid-svg-icons';
 const cx = classNames.bind(styles);
 
 function WistList({ wishItems, handleRemoveWishProducts, handleAddProducts, cartItems }) {
@@ -38,7 +39,7 @@ function WistList({ wishItems, handleRemoveWishProducts, handleAddProducts, cart
                                     <div>
                                         <p className={cx('info-price')}>Price: đ{item.price}</p>
 
-                                        <div onClick={() => alert('Item is added to your cart')}>
+                                        <div onClick={() => alert('Item is added to your cart ♥')}>
                                             <button
                                                 className={cx('info-add-btn')}
                                                 onClick={() => handleAddProducts(item)}

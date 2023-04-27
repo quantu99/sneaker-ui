@@ -1,4 +1,5 @@
 import Header from './Header';
+import Top from './Top/Top';
 import Slider from './Slide/Slider';
 import Products from './Products';
 import End from './End';
@@ -11,12 +12,14 @@ function DefaultLayout({
     handleAddWishProducts,
     handleRemoveWishProducts,
     productItems,
+    momentItems,
 }) {
     return (
         <div>
             <Header cartItems={cartItems} wishItems={wishItems} productItems={productItems} />
             <div className="container">
                 <Slider />
+                <Top />
                 <Products
                     productItems={productItems}
                     handleAddProducts={handleAddProducts}
@@ -24,7 +27,7 @@ function DefaultLayout({
                     handleAddWishProducts={handleAddWishProducts}
                     handleRemoveWishProducts={handleRemoveWishProducts}
                 />
-                <Content></Content>
+                <Content momentItems={momentItems}></Content>
                 <End />
                 {children}
             </div>

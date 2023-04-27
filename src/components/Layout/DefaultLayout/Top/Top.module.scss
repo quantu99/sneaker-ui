@@ -1,37 +1,60 @@
 .wrapper {
-    margin-left: 29px;
+    width: 100%;
+    height: 800px;
+    background-color: black;
+}
+.container {
+    height: 100%;
+    width: 100%;
+    padding: 30px 30px;
     display: flex;
-    width: 1290px;
 }
 .left {
+    background-color: black;
+    width: 50%;
     display: flex;
+    align-items: center;
     flex-direction: column;
-    img {
-        width: 520px;
-        height: 390px;
-        padding: 10px 33px 10px 15px;
+}
+.img-upper {
+    width: 100%;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    height: 50%;
+    object-fit: cover;
+    &:hover {
+        filter: brightness(0.7);
+        transition: all 0.2s ease-in;
+    }
+}
+.img-under {
+    width: 100%;
+    height: 50%;
+    padding-right: 30px;
+    object-fit: cover;
 
-        &:hover {
-            filter: brightness(0.7);
-            transition: all 0.2s ease-in;
-        }
+    &:hover {
+        filter: brightness(0.7);
+        transition: all 0.2s ease-in;
     }
 }
 
 .center {
+    background-color: black;
+    width: 50%;
+    display: flex;
+    justify-content: center;
     position: relative;
     img {
-        width: 727px;
-        height: 770px;
-        padding: 10px 1px 0px 1px;
-        margin-left: 27px;
-
+        height: 100%;
+        width: 100%;
         &:hover {
             filter: brightness(0.7);
             transition: all 0.2s ease-in;
         }
     }
     &:hover .title {
+        color: white;
         animation-duration: 2s;
         animation-name: bounceIn;
     }
@@ -43,7 +66,7 @@
     letter-spacing: 14px;
     right: 22%;
     top: 45%;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 @keyframes bounceIn {
     0% {

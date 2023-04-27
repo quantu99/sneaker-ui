@@ -1,11 +1,13 @@
 .wrapper {
+    width: 100%;
     min-height: 1000px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .container {
-    padding: 7px 10px 10px 10px;
+    padding: 7px 10px 10px 8px;
     width: 320px;
     border: 2px solid transparent;
     cursor: pointer;
@@ -21,7 +23,7 @@
     }
     img {
         width: 300px;
-        height: 300px;
+        height: 290px;
     }
     a {
         transition: all 0.2s ease;

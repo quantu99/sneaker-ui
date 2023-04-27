@@ -2,7 +2,7 @@ import styles from './Content.module.scss';
 import classNames from 'classnames/bind';
 import Insta from './Insta';
 const cx = classNames.bind(styles);
-function Content() {
+function Content({ momentItems }) {
     return (
         <div className={cx('wrapper')}>
             <div className={cx('container')}>
@@ -24,7 +24,7 @@ function Content() {
                 </div>
                 <div className={cx('content-2')}>
                     <h1 className={cx('content-2-header')}>#Shoes on Insta</h1>
-                    <Insta></Insta>
+                    <Insta momentItems={momentItems}></Insta>
                 </div>
             </div>
         </div>
