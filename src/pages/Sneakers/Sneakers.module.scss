@@ -7,9 +7,35 @@
     margin-left: 34px;
     border: 1px solid #eeeeee;
 }
+.products {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
 .products-header {
     margin-top: 64px;
     margin-left: 43px;
     width: 169px;
     border-bottom: 3px solid var(--primary-color);
+}
+.products-wrapper {
+    // max-height: 1015px;
+    width: 100%;
+    overflow: hidden;
+    padding: 65px 30px 0px;
+}
+.products-more {
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    justify-content: center;
+}
+.products-more-content {
+    color: var(--pink-color);
+    cursor: pointer;
+    &:hover {
+        color: var(--primary-color);
+        transition: all 0.3s linear;
+    }
 }

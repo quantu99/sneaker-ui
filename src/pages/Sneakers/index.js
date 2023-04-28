@@ -1,13 +1,13 @@
 import Header from '../../components/Layout/DefaultLayout/Header';
 import Sidebar from '../../components/Layout/DefaultLayout/Sidebar';
 import End from '../../components/Layout/DefaultLayout/End';
-import Products from '../../components/Layout/DefaultLayout/Products';
 import styles from './Sneakers.module.scss';
 import classNames from 'classnames/bind';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGrip } from '@fortawesome/free-solid-svg-icons';
+import Middle from '../../components/Layout/DefaultLayout/Products/Middle';
+import { useState } from 'react';
 const cx = classNames.bind(styles);
 function Sneakers({ cartItems, handleAddProducts, wishItems, handleAddWishProducts, productItems }) {
+    const [height, setHeight] = useState(1015);
     return (
         <div>
             <Header cartItems={cartItems} wishItems={wishItems} productItems={productItems} />
@@ -17,17 +17,18 @@ function Sneakers({ cartItems, handleAddProducts, wishItems, handleAddWishProduc
                 </aside>
                 <div className={cx('products')}>
                     <h1 className={cx('products-header')}>PRODUCTS</h1>
-                    {/* <div className={cx('products-options')}>
-                        <FontAwesomeIcon icon={faGrid} />
+                    <div style={{ height: `${height}px` }} className={cx('products-wrapper')}>
+                        <Middle
+                            cartItems={cartItems}
+                            handleAddProducts={handleAddProducts}
+                            wishItems={wishItems}
+                            handleAddWishProducts={handleAddWishProducts}
+                            productItems={productItems}
+                        ></Middle>
                     </div>
-                    <FontAwesomeIcon icon={fa}/> */}
-                    <Products
-                        cartItems={cartItems}
-                        handleAddProducts={handleAddProducts}
-                        wishItems={wishItems}
-                        handleAddWishProducts={handleAddWishProducts}
-                        productItems={productItems}
-                    />
+                    <div onClick={() => setHeight(height + 1450)} className={cx('products-more')}>
+                        <h2 className={cx('products-more-content')}>-----Watch more products-----</h2>
+                    </div>
                 </div>
             </div>
             <End />

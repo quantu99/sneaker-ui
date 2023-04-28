@@ -9,6 +9,7 @@ import Puma from '../pages/BrandsDetail/Puma';
 import Cart from '../pages/Cart/Cart';
 import WistList from '../pages/WishList/WishList';
 import Form from '../pages/FormSignUp/Form';
+import FormSignIn from '../pages/FormSignIn/FormSignIn';
 
 const publicRoutes = [
     { path: '/sneaker-ui', component: Home, layout: null },
@@ -22,6 +23,7 @@ const publicRoutes = [
     { path: '/cart', component: Cart, layout: null },
     { path: '/wish-list', component: WistList, layout: null },
     { path: '/register', component: Form, layout: null },
+    { path: '/login', component: FormSignIn, layout: null },
 ];
 
 export { publicRoutes };

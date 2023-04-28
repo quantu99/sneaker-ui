@@ -2,8 +2,26 @@
     width: 100%;
     background: white;
     display: flex;
+    flex-direction: column;
 }
 .wrapper-2 {
+    max-height: 1015px;
     width: 100%;
+    overflow: hidden;
     padding: 65px 30px 0px;
+}
+.wrapper-3 {
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    justify-content: center;
+}
+.wrapper-3-content {
+    color: var(--pink-color);
+    cursor: pointer;
+    &:hover {
+        color: var(--primary-color);
+        transition: all 0.3s linear;
+    }
 }
