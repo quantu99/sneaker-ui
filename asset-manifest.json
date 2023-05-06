@@ -1,9 +1,10 @@
 {
   "files": {
-    "main.css": "/sneaker-ui/static/css/main.4dc78bff.css",
-    "main.js": "/sneaker-ui/static/js/main.3b8cdb30.js",
+    "main.css": "/sneaker-ui/static/css/main.55a1f0b8.css",
+    "main.js": "/sneaker-ui/static/js/main.da496c0d.js",
     "static/js/787.fd4e04bf.chunk.js": "/sneaker-ui/static/js/787.fd4e04bf.chunk.js",
     "static/media/song2.mp3": "/sneaker-ui/static/media/song2.224323a05596c0934493.mp3",
+    "static/media/81sneakers4.jpg": "/sneaker-ui/static/media/81sneakers4.c6e659f7d48a6f014423.jpg",
     "static/media/img7.jpg": "/sneaker-ui/static/media/img7.651b2c9cdfa6e6f2ecd7.jpg",
     "static/media/img4.jpg": "/sneaker-ui/static/media/img4.9abaa18aa7a3a6fde977.jpg",
     "static/media/first.jpg": "/sneaker-ui/static/media/first.230fbaf4342bcdca892e.jpg",
@@ -13,8 +14,11 @@
     "static/media/puma1.jpg": "/sneaker-ui/static/media/puma1.6d0ed61a1fe7ef74936d.jpg",
     "static/media/img6.jpg": "/sneaker-ui/static/media/img6.7a27228127138d6f21f0.jpg",
     "static/media/img1.jpg": "/sneaker-ui/static/media/img1.17c470440ca03f9ff6a7.jpg",
+    "static/media/pitchgreen.jpg": "/sneaker-ui/static/media/pitchgreen.a90b7eef86f2834002d0.jpg",
+    "static/media/niketvsignal.jpg": "/sneaker-ui/static/media/niketvsignal.11f5d9a9b0942c3d07ed.jpg",
     "static/media/af1wheat.jpg": "/sneaker-ui/static/media/af1wheat.8791ca5d563eba89cc13.jpg",
     "static/media/pumawhitegum.jpg": "/sneaker-ui/static/media/pumawhitegum.e38b359f94d178346de0.jpg",
+    "static/media/jdshattered.jpg": "/sneaker-ui/static/media/jdshattered.d2c45113cd0a2eab5e69.jpg",
     "static/media/img11.jpg": "/sneaker-ui/static/media/img11.b150bb975695417d4dfa.jpg",
     "static/media/fouth.jpg": "/sneaker-ui/static/media/fouth.85a5bade4d6fe0ea86ff.jpg",
     "static/media/img9.jpg": "/sneaker-ui/static/media/img9.ad44a0ff484084dc9f77.jpg",
@@ -23,15 +27,18 @@
     "static/media/second.jpg": "/sneaker-ui/static/media/second.e54421f7ad017e1c40df.jpg",
     "static/media/jays.jpg": "/sneaker-ui/static/media/jays.818a75989ba9fc743b3e.jpg",
     "static/media/third.jpg": "/sneaker-ui/static/media/third.76b6ce6ba694cc492a38.jpg",
+    "static/media/nikestore.jpg": "/sneaker-ui/static/media/nikestore.f526e34e902bbcedfae3.jpg",
     "static/media/poster.jpg": "/sneaker-ui/static/media/poster.024f04a6a191f04c770f.jpg",
+    "static/media/logo.jpg": "/sneaker-ui/static/media/logo.6ea6f58e03a1d3da0253.jpg",
     "static/media/air.jpg": "/sneaker-ui/static/media/air.99e658efa788ba94787f.jpg",
+    "static/media/sidebar.jpg": "/sneaker-ui/static/media/sidebar.40869bfb292d2b9f3307.jpg",
     "index.html": "/sneaker-ui/index.html",
-    "main.4dc78bff.css.map": "/sneaker-ui/static/css/main.4dc78bff.css.map",
-    "main.3b8cdb30.js.map": "/sneaker-ui/static/js/main.3b8cdb30.js.map",
+    "main.55a1f0b8.css.map": "/sneaker-ui/static/css/main.55a1f0b8.css.map",
+    "main.da496c0d.js.map": "/sneaker-ui/static/js/main.da496c0d.js.map",
     "787.fd4e04bf.chunk.js.map": "/sneaker-ui/static/js/787.fd4e04bf.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4dc78bff.css",
-    "static/js/main.3b8cdb30.js"
+    "static/css/main.55a1f0b8.css",
+    "static/js/main.da496c0d.js"
   ]
 }
