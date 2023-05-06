@@ -5,18 +5,22 @@ import classNames from 'classnames/bind';
 import Button from '../../Button/Button';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeart } from '@fortawesome/free-regular-svg-icons';
+import just from '../../image/just.jpg';
+
 const cx = classNames.bind(styles);
 function FormSignInSuccess({ cartItems, wishItems }) {
     return (
         <div className={cx('wrapper')}>
             <Header cartItems={cartItems} wishItems={wishItems} />
             <div className={cx('container')}>
-                <img src="https://i.pinimg.com/736x/fa/25/27/fa2527a1209b35dedfacd585769e4d82.jpg" />
+                <img src={just} className={cx('image')} />
                 <div className={cx('wrapper-content-success')}>
                     <h1 className={cx('header-success')}>
-                        Login success
+                        Login success &#160;
                         <FontAwesomeIcon icon={faHeart} />
+                        &#160;
                         <FontAwesomeIcon icon={faHeart} />
+                        &#160;
                         <FontAwesomeIcon icon={faHeart} />
                     </h1>
                     <h1 className={cx('welcome')}>Welcome to 81 Sneaker!</h1>

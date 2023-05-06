@@ -13,6 +13,7 @@
     width: 726px;
     min-height: 100px;
     img {
+        height: 900px;
         width: 726px;
         filter: brightness(0.3);
         object-fit: cover;
@@ -152,4 +153,7 @@
         background: var(--primary-color);
         border-color: transparent;
     }
+}
+.image {
+    filter: brightness(0.6) !important;
 }

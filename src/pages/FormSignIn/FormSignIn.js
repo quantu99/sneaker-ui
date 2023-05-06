@@ -4,6 +4,8 @@ import classNames from 'classnames/bind';
 import Header from '../../components/Layout/DefaultLayout/Header';
 import End from '../../components/Layout/DefaultLayout/End';
 import login from './login';
+import just from '../../image/just.jpg';
+import { Link } from 'react-router-dom';
 const cx = classNames.bind(styles);
 function FormSignIn({ cartItems, wishItems, handleAddProducts, handleAddWishProducts, loginForm }) {
     const [errors, setErrors] = useState({});
@@ -37,7 +39,7 @@ function FormSignIn({ cartItems, wishItems, handleAddProducts, handleAddWishProd
                 handleAddWishProducts={handleAddWishProducts}
             />
             <div className={cx('container')}>
-                <img src="https://i.pinimg.com/736x/fa/25/27/fa2527a1209b35dedfacd585769e4d82.jpg" />
+                <img src={just} />
                 <div className={cx('wrapper-content')}>
                     <h1 className={cx('header')}>#Log in here</h1>
                     <div className={cx('input-div')}>
@@ -66,10 +68,12 @@ function FormSignIn({ cartItems, wishItems, handleAddProducts, handleAddWishProd
                         <button className={cx('login')} onClick={handleLogin}>
                             Log in !
                         </button>
-                        {/* <div className={cx('content-2')}>
-                            <p className={cx('p1')}> If you have already account</p>
-                            <p className={cx('p2')}>Sign in now!</p>
-                        </div> */}
+                        <div className={cx('content-2')}>
+                            <p className={cx('p1')}> If you haven't account yet</p>
+                            <Link to={'/register'}>
+                                <p className={cx('p2')}>Sign up now!</p>
+                            </Link>
+                        </div>
                     </div>
                 </div>
             </div>

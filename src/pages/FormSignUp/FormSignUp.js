@@ -3,7 +3,10 @@ import styles from './FormSignUp.module.scss';
 import Header from '../../components/Layout/DefaultLayout/Header';
 import End from '../../components/Layout/DefaultLayout/End';
 import validation from './validation';
+import signup from '../../image/signup.jpg';
+
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 const cx = classNames.bind(styles);
 
 function FormSignUp({ cartItems, wishItems, handleAddProducts, handleAddWishProducts, submitForm }) {
@@ -42,7 +45,7 @@ function FormSignUp({ cartItems, wishItems, handleAddProducts, handleAddWishProd
                 handleAddWishProducts={handleAddWishProducts}
             />
             <div className={cx('container')}>
-                <img src="https://i.pinimg.com/736x/fa/25/27/fa2527a1209b35dedfacd585769e4d82.jpg" />
+                <img src={signup} />
                 <div className={cx('wrapper-content')}>
                     <h1 className={cx('header')}>#Register form</h1>
                     <div className={cx('input-div')}>
@@ -95,7 +98,9 @@ function FormSignUp({ cartItems, wishItems, handleAddProducts, handleAddWishProd
                         </button>
                         <div className={cx('content-2')}>
                             <p className={cx('p1')}> If you have already account</p>
-                            <p className={cx('p2')}>Sign in now!</p>
+                            <Link to={'/login'}>
+                                <p className={cx('p2')}>Sign in now!</p>
+                            </Link>
                         </div>
                     </div>
                 </div>

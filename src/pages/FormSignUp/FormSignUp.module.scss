@@ -13,6 +13,7 @@
     width: 726px;
     min-height: 100px;
     img {
+        height: 900px;
         width: 726px;
         filter: brightness(0.3);
         object-fit: cover;
@@ -21,7 +22,7 @@
 .wrapper-content {
     position: absolute;
     left: 50%;
-    top: 45%;
+    top: 50%;
     transform: translate(-50%, -50%);
 }
 .wrapper-content-success {
@@ -108,7 +109,7 @@
     font-weight: 800;
 }
 .welcome {
-    color: #f58181;
+    color: #ee5252;
     font-weight: 800;
     animation: bounceIn 2s linear;
 }
