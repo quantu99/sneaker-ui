@@ -118,7 +118,9 @@
 .products-detail {
     display: flex;
     flex-wrap: wrap;
-    padding: 65px 34px 0px 34px;
+    min-height: 1000px;
+    width: 100%;
+    padding: 65px 30px 0;
 }
 .products-header {
     margin-top: 64px;
@@ -157,8 +159,8 @@
     font-weight: 500;
 }
 .container {
-    padding: 7px 10px 10px 10px;
-    width: 320px;
+    padding: 7px 10px 10px 8px;
+    width: 309px;
     border: 2px solid transparent;
     cursor: pointer;
     &:hover {
@@ -172,8 +174,8 @@
         animation-name: flowdown;
     }
     img {
-        width: 300px;
-        height: 300px;
+        height: 290px;
+        width: 289px;
     }
     a {
         transition: all 0.2s ease;

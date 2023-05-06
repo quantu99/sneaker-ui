@@ -144,7 +144,7 @@ function Small({ cartItems, handleAddProducts, wishItems, handleAddWishProducts,
                 handleAddWishProducts={handleAddWishProducts}
             ></Header>
             <div className={cx('header')}>
-                <Link className={cx('header-home')} to={'/'}>
+                <Link className={cx('header-home')} to={'/sneaker-ui'}>
                     Home
                 </Link>
                 <FontAwesomeIcon className={cx('header-icon')} icon={faChevronRight} />

@@ -146,7 +146,7 @@ function Adidas({ cartItems, handleAddProducts, wishItems, handleAddWishProducts
                 handleAddWishProducts={handleAddWishProducts}
             ></Header>
             <div className={cx('header')}>
-                <Link className={cx('header-home')} to={'/'}>
+                <Link className={cx('header-home')} to={'/sneaker-ui'}>
                     Home
                 </Link>
                 <FontAwesomeIcon className={cx('header-icon')} icon={faChevronRight} />
@@ -272,7 +272,7 @@ function Adidas({ cartItems, handleAddProducts, wishItems, handleAddWishProducts
                             </ul>
                         </ul>
                     </div>
-                    <img className={cx('sidebar-img')} src={sidebar} />
+                    <img className={cx('sidebar-img')} loading="lazy" src={sidebar} />
                 </aside>
                 <div className={cx('products')}>
                     <h1 className={cx('products-header')}>PRODUCTS</h1>
