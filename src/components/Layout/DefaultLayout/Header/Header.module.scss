@@ -9,17 +9,17 @@
 .header_upper {
     height: 170px;
     display: flex;
-    padding: 0px 30px;
+    align-items: center;
 }
 .header_upper-image {
     cursor: pointer;
-    width: 200px;
-    height: 150px;
+    width: 250px;
+    object-fit: cover;
 }
 .header_upper-menu {
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 }
 .header_upper-menu-list {
@@ -28,7 +28,7 @@
     font-weight: 600;
 }
 .header_upper-menu-list-item {
-    padding: 0px 42px;
+    padding: 0px 70px;
     position: relative;
     color: black;
 }
@@ -109,6 +109,7 @@
 }
 .under_inner {
     display: flex;
+    width: 100%;
     justify-content: space-between;
     padding: 0px 30px;
 }

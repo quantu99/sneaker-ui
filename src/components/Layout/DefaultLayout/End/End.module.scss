@@ -29,9 +29,13 @@
     width: 330px;
     img {
         width: 210px;
-        height: 160px;
+        height: 210px;
+        object-fit: cover;
         border-radius: 5px;
     }
+}
+.container-1-img {
+    width: 240px;
 }
 .container-1-center {
     margin-top: 20px;

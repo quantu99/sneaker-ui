@@ -1,12 +1,14 @@
 import { useEffect } from 'react';
 import { useState } from 'react';
-import styles from './Jordan.module.scss';
+import styles from './BrandsDetail.module.scss';
 import classNames from 'classnames/bind';
 import { Link } from 'react-router-dom';
 import Tippy from '@tippyjs/react/headless';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import sidebar from '../../image/sidebar.jpg';
 import { faSquare, faHeart } from '@fortawesome/free-regular-svg-icons';
 import {
+    faArrowUp,
     faSquareCheck,
     faCartShopping,
     faSliders,
@@ -16,7 +18,6 @@ import {
     faChevronRight,
 } from '@fortawesome/free-solid-svg-icons';
 import Header from '../../components/Layout/DefaultLayout/Header';
-import Sidebar from '../../components/Layout/DefaultLayout/Sidebar';
 import End from '../../components/Layout/DefaultLayout/End';
 const cx = classNames.bind(styles);
 const JordanItems = ({ product, handleAddProducts, handleAddWishProducts }) => {
@@ -116,6 +117,19 @@ const JordanItems = ({ product, handleAddProducts, handleAddWishProducts }) => {
 };
 function Jordan({ cartItems, handleAddProducts, wishItems, handleAddWishProducts, productItems }) {
     const [brand, setBrand] = useState([]);
+    const [scroll, setScroll] = useState(false);
+    useEffect(() => {
+        const handleScroll = function () {
+            setScroll(window.scrollY >= 200);
+        };
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+    const moveToTop = () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
     useEffect(() => {
         const products = productItems.filter((products) => {
             return products.brand.includes('jordan');
@@ -189,14 +203,14 @@ function Jordan({ cartItems, handleAddProducts, wishItems, handleAddWishProducts
                         <h3 className={cx('price')}>Price</h3>
                         <ul>
                             <li className={cx('brand')}>
-                                <Link className={cx('checkbox')} to={'/sneakers/nike'}>
+                                <Link className={cx('checkbox')} to={'/sneakers/1000000'}>
                                     <FontAwesomeIcon className={cx('square')} icon={faSquare} />
                                     <FontAwesomeIcon className={cx('square-check')} icon={faSquareCheck} />
                                 </Link>
                                 &#60; đ 1.000.000
                             </li>
                             <li className={cx('brand')}>
-                                <Link className={cx('checkbox')} to={'/sneakers/adidas'}>
+                                <Link className={cx('checkbox')} to={'/sneakers/1000001-3000000'}>
                                     <FontAwesomeIcon className={cx('square')} icon={faSquare} />
 
                                     <FontAwesomeIcon className={cx('square-check')} icon={faSquareCheck} />
@@ -204,7 +218,7 @@ function Jordan({ cartItems, handleAddProducts, wishItems, handleAddWishProducts
                                 đ 1.000.000 - đ 3.000.000
                             </li>
                             <li className={cx('brand')}>
-                                <Link className={cx('checkbox')} to={'/sneakers/jordan'}>
+                                <Link className={cx('checkbox')} to={'/sneakers/3000001-5000000'}>
                                     <FontAwesomeIcon className={cx('square')} icon={faSquare} />
 
                                     <FontAwesomeIcon className={cx('square-check')} icon={faSquareCheck} />
@@ -212,7 +226,7 @@ function Jordan({ cartItems, handleAddProducts, wishItems, handleAddWishProducts
                                 đ 3.000.000 - đ 5.000.000
                             </li>
                             <li className={cx('brand')}>
-                                <Link className={cx('checkbox')} to={'/sneakers/puma'}>
+                                <Link className={cx('checkbox')} to={'/sneakers/5000000'}>
                                     <FontAwesomeIcon className={cx('square')} icon={faSquare} />
 
                                     <FontAwesomeIcon className={cx('square-check')} icon={faSquareCheck} />
@@ -223,14 +237,14 @@ function Jordan({ cartItems, handleAddProducts, wishItems, handleAddWishProducts
                             <h3 className={cx('price')}>Size</h3>
                             <ul>
                                 <li className={cx('brand')}>
-                                    <Link className={cx('checkbox')} to={`/sneakers/nike`}>
+                                    <Link className={cx('checkbox')} to={`/sneakers/small`}>
                                         <FontAwesomeIcon className={cx('square')} icon={faSquare} />
                                         <FontAwesomeIcon className={cx('square-check')} icon={faSquareCheck} />
                                     </Link>
                                     36- 38(US: 3.5- 5.5)
                                 </li>
                                 <li className={cx('brand')}>
-                                    <Link className={cx('checkbox')} to={'/sneakers/adidas'}>
+                                    <Link className={cx('checkbox')} to={'/sneakers/medium'}>
                                         <FontAwesomeIcon className={cx('square')} icon={faSquare} />
 
                                         <FontAwesomeIcon className={cx('square-check')} icon={faSquareCheck} />
@@ -238,7 +252,7 @@ function Jordan({ cartItems, handleAddProducts, wishItems, handleAddWishProducts
                                     39- 41(US: 6.5- 8)
                                 </li>
                                 <li className={cx('brand')}>
-                                    <Link className={cx('checkbox')} to={'/sneakers/jordan'}>
+                                    <Link className={cx('checkbox')} to={'/sneakers/large'}>
                                         <FontAwesomeIcon className={cx('square')} icon={faSquare} />
 
                                         <FontAwesomeIcon className={cx('square-check')} icon={faSquareCheck} />
@@ -247,7 +261,7 @@ function Jordan({ cartItems, handleAddProducts, wishItems, handleAddWishProducts
                                 </li>
 
                                 <li className={cx('brand')}>
-                                    <Link className={cx('checkbox')} to={'/sneakers/converse'}>
+                                    <Link className={cx('checkbox')} to={'/sneakers/extra-large'}>
                                         <FontAwesomeIcon className={cx('square')} icon={faSquare} />
 
                                         <FontAwesomeIcon className={cx('square-check')} icon={faSquareCheck} />
@@ -257,10 +271,7 @@ function Jordan({ cartItems, handleAddProducts, wishItems, handleAddWishProducts
                             </ul>
                         </ul>
                     </div>
-                    <img
-                        className={cx('sidebar-img')}
-                        src="https://pyxis.nymag.com/v1/imgs/c8c/c6f/a822e27af8ae7ae42c30004c46f0045816-01-Off-White-sneaker-LEDE.rvertical.w600.jpg"
-                    />
+                    <img className={cx('sidebar-img')} src={sidebar} />
                 </aside>
                 <div className={cx('products')}>
                     <h1 className={cx('products-header')}>PRODUCTS</h1>
@@ -275,6 +286,11 @@ function Jordan({ cartItems, handleAddProducts, wishItems, handleAddWishProducts
                     </div>
                 </div>
             </div>
+            {scroll && (
+                <button className={cx('btn-top')} onClick={moveToTop}>
+                    <FontAwesomeIcon icon={faArrowUp} />
+                </button>
+            )}
             <End />
         </div>
     );

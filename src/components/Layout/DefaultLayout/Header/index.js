@@ -18,7 +18,7 @@ import Tippy from '@tippyjs/react/headless';
 import 'tippy.js/dist/tippy.css';
 import Wrapper from '../../../Popper/Wrapper';
 import Search from '../../Search';
-
+import logo from '../Top/topImage/logo.jpg';
 const cx = classNames.bind(styles);
 function Header({ cartItems, wishItems, productItems }) {
     return (
@@ -26,11 +26,7 @@ function Header({ cartItems, wishItems, productItems }) {
             <div className={cx('header_inner')}>
                 <div className={cx('header_upper')}>
                     <Link to="/sneaker-ui">
-                        <img
-                            className={cx('header_upper-image')}
-                            src="https://scontent.fvca1-3.fna.fbcdn.net/v/t1.15752-9/338080670_915671709686265_8393406944187007139_n.png?_nc_cat=110&ccb=1-7&_nc_sid=ae9488&_nc_ohc=MWmUCmxljc8AX_wUeCR&_nc_ht=scontent.fvca1-3.fna&oh=03_AdS8zvTwi1LHHD4gtohmGYpsoa1JOGHIDmuytqyz6MxYYw&oe=644B04DF"
-                            alt="81 sneakers"
-                        />
+                        <img className={cx('header_upper-image')} src={logo} alt="81 sneakers" />
                     </Link>
                     <div className={cx('header_upper-menu')}>
                         <ul className={cx('header_upper-menu-list')}>
@@ -45,8 +41,12 @@ function Header({ cartItems, wishItems, productItems }) {
                                     <div className={cx('upper_menu-result')} tabIndex="-1" {...attrs}>
                                         <Wrapper>
                                             <ul>
-                                                <li>For Men</li>
-                                                <li>For Women</li>
+                                                <Link to={'/sneakers/large'}>
+                                                    <li>For Men</li>
+                                                </Link>
+                                                <Link to={'/sneakers/small'}>
+                                                    <li>For Women</li>
+                                                </Link>
                                                 <li className={cx('upper_menu-result-list-item')}>
                                                     Others
                                                     <FontAwesomeIcon
@@ -98,20 +98,6 @@ function Header({ cartItems, wishItems, productItems }) {
                             >
                                 <li className={cx('header_upper-menu-list-item')}>
                                     ACCESSORIES
-                                    <FontAwesomeIcon className={cx('upper-icon')} icon={faChevronDown} />
-                                </li>
-                            </Tippy>
-                            <Tippy
-                                interactive={true}
-                                placement="bottom"
-                                render={(attrs) => (
-                                    <div className={cx('upper_menu-result')} tabIndex="-1" {...attrs}>
-                                        <Wrapper></Wrapper>
-                                    </div>
-                                )}
-                            >
-                                <li className={cx('header_upper-menu-list-item')}>
-                                    TOP PRODUCTS
                                     <FontAwesomeIcon className={cx('upper-icon')} icon={faChevronDown} />
                                 </li>
                             </Tippy>
@@ -208,10 +194,10 @@ function Header({ cartItems, wishItems, productItems }) {
                                     <Link to={'/register'}>
                                         <a className={cx('link')}>Register</a>
                                     </Link>
-                                    <span>
+                                    <Link to={'/login'}>
                                         or
                                         <a className={cx('signin')}> Sign in</a>
-                                    </span>
+                                    </Link>
                                 </div>
                             </div>
                             <div className={cx('carts')}>

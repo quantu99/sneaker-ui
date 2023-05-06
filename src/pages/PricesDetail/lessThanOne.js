@@ -1,26 +1,25 @@
-import { useEffect } from 'react';
-import { useState } from 'react';
-import styles from './BrandsDetail.module.scss';
+import { useState, useEffect } from 'react';
 import classNames from 'classnames/bind';
+import styles from './PricesDetail.module.scss';
 import { Link } from 'react-router-dom';
 import Tippy from '@tippyjs/react/headless';
+import nikestore from '../../image/nikestore.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import sidebar from '../../image/sidebar.jpg';
 import { faSquare, faHeart } from '@fortawesome/free-regular-svg-icons';
 import {
     faArrowUp,
-    faCircleCheck,
-    faHeartCircleCheck,
     faSquareCheck,
     faCartShopping,
     faSliders,
     faArrowUpRightFromSquare,
     faChevronRight,
+    faCircleCheck,
+    faHeartCircleCheck,
 } from '@fortawesome/free-solid-svg-icons';
 import Header from '../../components/Layout/DefaultLayout/Header';
 import End from '../../components/Layout/DefaultLayout/End';
 const cx = classNames.bind(styles);
-const PumaItems = ({ product, handleAddProducts, handleAddWishProducts }) => {
+function LessThanOneItems({ product, handleAddProducts, handleAddWishProducts }) {
     const [iconVisible, setIconVisible] = useState(true);
     const [textVisible, setTextVisible] = useState(true);
     function toggleIcon() {
@@ -114,9 +113,8 @@ const PumaItems = ({ product, handleAddProducts, handleAddWishProducts }) => {
             </div>
         </div>
     );
-};
-function Puma({ cartItems, handleAddProducts, wishItems, handleAddWishProducts, productItems }) {
-    const [brand, setBrand] = useState([]);
+}
+function lessThanOne({ cartItems, handleAddProducts, wishItems, handleAddWishProducts, productItems }) {
     const [scroll, setScroll] = useState(false);
     useEffect(() => {
         const handleScroll = function () {
@@ -130,11 +128,12 @@ function Puma({ cartItems, handleAddProducts, wishItems, handleAddWishProducts, 
     const moveToTop = () => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     };
+    const [price, setPrice] = useState([]);
     useEffect(() => {
         const products = productItems.filter((products) => {
-            return products.brand.includes('puma');
+            return products.price <= 1000000;
         });
-        setBrand(products);
+        setPrice(products);
     }, []);
     return (
         <div className={cx('wrapper')}>
@@ -154,8 +153,8 @@ function Puma({ cartItems, handleAddProducts, wishItems, handleAddWishProducts, 
                 </Link>
                 <FontAwesomeIcon className={cx('header-icon')} icon={faChevronRight} />
 
-                <Link to={'/sneakers/puma'} className={cx('header-product')}>
-                    Puma
+                <Link to={'/sneakers/1000000'} className={cx('header-product')}>
+                    Less than 1.000.000
                 </Link>
             </div>
             <div className={cx('wrapper-2')}>
@@ -172,9 +171,12 @@ function Puma({ cartItems, handleAddProducts, wishItems, handleAddWishProducts, 
                             </li>
                             <li className={cx('brand')}>
                                 <Link className={cx('checkbox')} to={'/sneakers/adidas'}>
-                                    <FontAwesomeIcon className={cx('square')} icon={faSquare} />
+                                    <FontAwesomeIcon className={cx('square', 'adidas')} icon={faSquare} />
 
-                                    <FontAwesomeIcon className={cx('square-check')} icon={faSquareCheck} />
+                                    <FontAwesomeIcon
+                                        className={cx('square-check', 'adidas-check')}
+                                        icon={faSquareCheck}
+                                    />
                                 </Link>
                                 Adidas
                             </li>
@@ -188,12 +190,9 @@ function Puma({ cartItems, handleAddProducts, wishItems, handleAddWishProducts, 
                             </li>
                             <li className={cx('brand')}>
                                 <Link className={cx('checkbox')} to={'/sneakers/puma'}>
-                                    <FontAwesomeIcon className={cx('square', 'puma')} icon={faSquare} />
+                                    <FontAwesomeIcon className={cx('square')} icon={faSquare} />
 
-                                    <FontAwesomeIcon
-                                        className={cx('square-check', 'puma-check')}
-                                        icon={faSquareCheck}
-                                    />
+                                    <FontAwesomeIcon className={cx('square-check')} icon={faSquareCheck} />
                                 </Link>
                                 Puma
                             </li>
@@ -204,8 +203,11 @@ function Puma({ cartItems, handleAddProducts, wishItems, handleAddWishProducts, 
                         <ul>
                             <li className={cx('brand')}>
                                 <Link className={cx('checkbox')} to={'/sneakers/1000000'}>
-                                    <FontAwesomeIcon className={cx('square')} icon={faSquare} />
-                                    <FontAwesomeIcon className={cx('square-check')} icon={faSquareCheck} />
+                                    <FontAwesomeIcon className={cx('square', 'less-one')} icon={faSquare} />
+                                    <FontAwesomeIcon
+                                        className={cx('square-check', 'less-one-check')}
+                                        icon={faSquareCheck}
+                                    />
                                 </Link>
                                 &#60; đ 1.000.000
                             </li>
@@ -271,13 +273,13 @@ function Puma({ cartItems, handleAddProducts, wishItems, handleAddWishProducts, 
                             </ul>
                         </ul>
                     </div>
-                    <img className={cx('sidebar-img')} src={sidebar} />
+                    <img className={cx('sidebar-img')} src={nikestore} />
                 </aside>
                 <div className={cx('products')}>
                     <h1 className={cx('products-header')}>PRODUCTS</h1>
                     <div className={cx('products-detail')}>
-                        {brand.map((product) => (
-                            <PumaItems
+                        {price.map((product) => (
+                            <LessThanOneItems
                                 product={product}
                                 handleAddProducts={handleAddProducts}
                                 handleAddWishProducts={handleAddWishProducts}
@@ -296,4 +298,4 @@ function Puma({ cartItems, handleAddProducts, wishItems, handleAddWishProducts, 
     );
 }
 
-export default Puma;
+export default lessThanOne;

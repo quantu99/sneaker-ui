@@ -52,14 +52,14 @@ function Sidebar({ className }) {
             <h3 className={cx('price')}>Price</h3>
             <ul>
                 <li className={cx('brand')}>
-                    <Link className={cx('checkbox')} to={'/sneakers/nike'}>
+                    <Link className={cx('checkbox')} to={'/sneakers/1000000'}>
                         <FontAwesomeIcon className={cx('square')} icon={faSquare} />
                         <FontAwesomeIcon className={cx('square-check')} icon={faSquareCheck} />
                     </Link>
                     &#60; đ 1.000.000
                 </li>
                 <li className={cx('brand')}>
-                    <Link className={cx('checkbox')} to={'/sneakers/adidas'}>
+                    <Link className={cx('checkbox')} to={'/sneakers/1000001-3000000'}>
                         <FontAwesomeIcon className={cx('square')} icon={faSquare} />
 
                         <FontAwesomeIcon className={cx('square-check')} icon={faSquareCheck} />
@@ -67,7 +67,7 @@ function Sidebar({ className }) {
                     đ 1.000.000 - đ 3.000.000
                 </li>
                 <li className={cx('brand')}>
-                    <Link className={cx('checkbox')} to={'/sneakers/jordan'}>
+                    <Link className={cx('checkbox')} to={'/sneakers/3000001-5000000'}>
                         <FontAwesomeIcon className={cx('square')} icon={faSquare} />
 
                         <FontAwesomeIcon className={cx('square-check')} icon={faSquareCheck} />
@@ -75,7 +75,7 @@ function Sidebar({ className }) {
                     đ 3.000.000 - đ 5.000.000
                 </li>
                 <li className={cx('brand')}>
-                    <Link className={cx('checkbox')} to={'/sneakers/gucci'}>
+                    <Link className={cx('checkbox')} to={'/sneakers/5000000'}>
                         <FontAwesomeIcon className={cx('square')} icon={faSquare} />
 
                         <FontAwesomeIcon className={cx('square-check')} icon={faSquareCheck} />
@@ -86,14 +86,14 @@ function Sidebar({ className }) {
                 <h3 className={cx('price')}>Size</h3>
                 <ul>
                     <li className={cx('brand')}>
-                        <Link className={cx('checkbox')} to={`/sneakers/nike`}>
+                        <Link className={cx('checkbox')} to={`/sneakers/small`}>
                             <FontAwesomeIcon className={cx('square')} icon={faSquare} />
                             <FontAwesomeIcon className={cx('square-check')} icon={faSquareCheck} />
                         </Link>
                         36- 38(US: 3.5- 5.5)
                     </li>
                     <li className={cx('brand')}>
-                        <Link className={cx('checkbox')} to={'/sneakers/adidas'}>
+                        <Link className={cx('checkbox')} to={'/sneakers/medium'}>
                             <FontAwesomeIcon className={cx('square')} icon={faSquare} />
 
                             <FontAwesomeIcon className={cx('square-check')} icon={faSquareCheck} />
@@ -101,7 +101,7 @@ function Sidebar({ className }) {
                         39- 41(US: 6.5- 8)
                     </li>
                     <li className={cx('brand')}>
-                        <Link className={cx('checkbox')} to={'/sneakers/jordan'}>
+                        <Link className={cx('checkbox')} to={'/sneakers/large'}>
                             <FontAwesomeIcon className={cx('square')} icon={faSquare} />
 
                             <FontAwesomeIcon className={cx('square-check')} icon={faSquareCheck} />
@@ -110,7 +110,7 @@ function Sidebar({ className }) {
                     </li>
 
                     <li className={cx('brand')}>
-                        <Link className={cx('checkbox')} to={'/sneakers/converse'}>
+                        <Link className={cx('checkbox')} to={'/sneakers/extra-large'}>
                             <FontAwesomeIcon className={cx('square')} icon={faSquare} />
 
                             <FontAwesomeIcon className={cx('square-check')} icon={faSquareCheck} />

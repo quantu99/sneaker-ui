@@ -1,15 +1,28 @@
 .wrapper {
-    width: 100%;
+}
+.btn-top {
+    cursor: pointer;
+    background-color: transparent;
+    width: 50px;
+    height: 50px;
+    bottom: 20px;
+    right: 20px;
+    position: fixed;
+    &:hover {
+        background-color: #eeeeee;
+        transition: all 0.3s linear;
+    }
 }
 .wrapper-2 {
     display: flex;
 }
 .sidebar {
-    position: relative;
     height: 928px;
+    border-radius: 30px;
     margin-top: 75px;
     margin-left: 34px;
     border: 1px solid #eeeeee;
+    position: relative;
 }
 .sidebar-container {
     width: 255px;
@@ -29,25 +42,16 @@
 }
 .sidebar-img {
     position: absolute;
-    bottom: 0;
+    bottom: -40px;
     width: 255px;
     padding-left: 5px;
     padding-right: 5px;
     padding-bottom: 5px;
     filter: brightness(0.7);
+    border-radius: 30px;
     &:hover {
-        // filter: drop-shadow(5px 10px 3px gray);
-        // transition: all 0.3s linear;
-        animation: animation-1 2s linear;
-    }
-}
-@keyframes animation-1 {
-    from {
-        filter: blur(2px);
-    }
-    to {
-        filter: blur(0px);
         filter: brightness(1);
+        transition: all 0.3s linear;
     }
 }
 .brand {
@@ -79,6 +83,20 @@
 .square-check {
     display: none;
 }
+.adidas {
+    display: none !important;
+}
+.adidas-check {
+    color: var(--primary-color) !important;
+    display: block !important;
+}
+.jordan {
+    display: none !important;
+}
+.jordan-check {
+    color: var(--primary-color) !important;
+    display: block !important;
+}
 .nike {
     display: none !important;
 }
@@ -86,22 +104,42 @@
     color: var(--primary-color) !important;
     display: block !important;
 }
-
-.price {
-    border-top: 1px solid #eeeeee;
-    padding-top: 16px;
-    margin-top: 20px;
+.puma {
+    display: none !important;
+}
+.puma-check {
+    color: var(--primary-color) !important;
+    display: block !important;
+}
+.products {
+    width: 100%;
+    overflow: hidden;
 }
 .products-detail {
     display: flex;
     flex-wrap: wrap;
-    padding: 65px 34px 0px 34px;
+    padding: 65px 30px 0px;
 }
 .products-header {
     margin-top: 64px;
     margin-left: 43px;
     width: 169px;
     border-bottom: 3px solid var(--primary-color);
+}
+.products-more {
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    justify-content: center;
+}
+.products-more-content {
+    color: var(--pink-color);
+    cursor: pointer;
+    &:hover {
+        color: var(--primary-color);
+        transition: all 0.3s linear;
+    }
 }
 .header {
     padding: 40px 34px 0px 34px;

@@ -4,10 +4,28 @@ import End from '../../components/Layout/DefaultLayout/End';
 import styles from './Sneakers.module.scss';
 import classNames from 'classnames/bind';
 import Middle from '../../components/Layout/DefaultLayout/Products/Middle';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowUp } from '@fortawesome/free-solid-svg-icons';
 const cx = classNames.bind(styles);
 function Sneakers({ cartItems, handleAddProducts, wishItems, handleAddWishProducts, productItems }) {
     const [height, setHeight] = useState(1015);
+    const [scroll, setScroll] = useState(false);
+    const moveToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth',
+        });
+    };
+    useEffect(() => {
+        const handleScroll = function () {
+            setScroll(window.scrollY >= 200);
+        };
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
     return (
         <div>
             <Header cartItems={cartItems} wishItems={wishItems} productItems={productItems} />
@@ -31,6 +49,11 @@ function Sneakers({ cartItems, handleAddProducts, wishItems, handleAddWishProduc
                     </div>
                 </div>
             </div>
+            {scroll && (
+                <button className={cx('btn-top')} onClick={moveToTop}>
+                    <FontAwesomeIcon icon={faArrowUp} />
+                </button>
+            )}
             <End />
         </div>
     );

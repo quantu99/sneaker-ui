@@ -1,8 +1,25 @@
+.wrapper {
+}
+.btn-top {
+    cursor: pointer;
+    background-color: transparent;
+    width: 50px;
+    height: 50px;
+    bottom: 20px;
+    right: 20px;
+    position: fixed;
+    &:hover {
+        background-color: #eeeeee;
+        transition: all 0.3s linear;
+    }
+}
+
 .wrapper-2 {
     display: flex;
 }
 .sidebar {
     height: 928px;
+    border-radius: 30px;
     margin-top: 75px;
     margin-left: 34px;
     border: 1px solid #eeeeee;
@@ -28,15 +45,10 @@
     position: absolute;
     bottom: 0;
     width: 255px;
+    border-radius: 30px;
     padding-left: 5px;
     padding-right: 5px;
     padding-bottom: 5px;
-    filter: brightness(0.7);
-    &:hover {
-        // filter: drop-shadow(5px 10px 3px gray);
-        // transition: all 0.3s linear;
-        animation: animation-1 2s linear;
-    }
 }
 @keyframes animation-1 {
     from {
@@ -76,10 +88,31 @@
 .square-check {
     display: none;
 }
-.puma {
+.small {
     display: none !important;
 }
-.puma-check {
+.small-check {
+    color: var(--primary-color) !important;
+    display: block !important;
+}
+.medium {
+    display: none !important;
+}
+.medium-check {
+    color: var(--primary-color) !important;
+    display: block !important;
+}
+.large {
+    display: none !important;
+}
+.large-check {
+    color: var(--primary-color) !important;
+    display: block !important;
+}
+.xl {
+    display: none !important;
+}
+.xl-check {
     color: var(--primary-color) !important;
     display: block !important;
 }

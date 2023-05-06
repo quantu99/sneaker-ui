@@ -1,12 +1,14 @@
 import { useEffect } from 'react';
 import { useState } from 'react';
-import styles from './Adidas.module.scss';
+import styles from './BrandsDetail.module.scss';
 import classNames from 'classnames/bind';
 import { Link } from 'react-router-dom';
 import Tippy from '@tippyjs/react/headless';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSquare, faHeart } from '@fortawesome/free-regular-svg-icons';
+import sidebar from '../../image/sidebar.jpg';
 import {
+    faArrowUp,
     faSquareCheck,
     faCartShopping,
     faSliders,
@@ -114,6 +116,20 @@ const AdidasItems = ({ product, handleAddProducts, handleAddWishProducts }) => {
     );
 };
 function Adidas({ cartItems, handleAddProducts, wishItems, handleAddWishProducts, productItems }) {
+    const [height, setHeight] = useState(1015);
+    const [scroll, setScroll] = useState(false);
+    useEffect(() => {
+        const handleScroll = function () {
+            setScroll(window.scrollY >= 200);
+        };
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+    const moveToTop = () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
     const [brand, setBrand] = useState([]);
     useEffect(() => {
         const products = productItems.filter((products) => {
@@ -188,14 +204,14 @@ function Adidas({ cartItems, handleAddProducts, wishItems, handleAddWishProducts
                         <h3 className={cx('price')}>Price</h3>
                         <ul>
                             <li className={cx('brand')}>
-                                <Link className={cx('checkbox')} to={'/sneakers/nike'}>
+                                <Link className={cx('checkbox')} to={'/sneakers/1000000'}>
                                     <FontAwesomeIcon className={cx('square')} icon={faSquare} />
                                     <FontAwesomeIcon className={cx('square-check')} icon={faSquareCheck} />
                                 </Link>
                                 &#60; đ 1.000.000
                             </li>
                             <li className={cx('brand')}>
-                                <Link className={cx('checkbox')} to={'/sneakers/adidas'}>
+                                <Link className={cx('checkbox')} to={'/sneakers/1000001-3000000'}>
                                     <FontAwesomeIcon className={cx('square')} icon={faSquare} />
 
                                     <FontAwesomeIcon className={cx('square-check')} icon={faSquareCheck} />
@@ -203,7 +219,7 @@ function Adidas({ cartItems, handleAddProducts, wishItems, handleAddWishProducts
                                 đ 1.000.000 - đ 3.000.000
                             </li>
                             <li className={cx('brand')}>
-                                <Link className={cx('checkbox')} to={'/sneakers/jordan'}>
+                                <Link className={cx('checkbox')} to={'/sneakers/3000001-5000000'}>
                                     <FontAwesomeIcon className={cx('square')} icon={faSquare} />
 
                                     <FontAwesomeIcon className={cx('square-check')} icon={faSquareCheck} />
@@ -211,7 +227,7 @@ function Adidas({ cartItems, handleAddProducts, wishItems, handleAddWishProducts
                                 đ 3.000.000 - đ 5.000.000
                             </li>
                             <li className={cx('brand')}>
-                                <Link className={cx('checkbox')} to={'/sneakers/puma'}>
+                                <Link className={cx('checkbox')} to={'/sneakers/5000000'}>
                                     <FontAwesomeIcon className={cx('square')} icon={faSquare} />
 
                                     <FontAwesomeIcon className={cx('square-check')} icon={faSquareCheck} />
@@ -222,14 +238,14 @@ function Adidas({ cartItems, handleAddProducts, wishItems, handleAddWishProducts
                             <h3 className={cx('price')}>Size</h3>
                             <ul>
                                 <li className={cx('brand')}>
-                                    <Link className={cx('checkbox')} to={`/sneakers/nike`}>
+                                    <Link className={cx('checkbox')} to={`/sneakers/small`}>
                                         <FontAwesomeIcon className={cx('square')} icon={faSquare} />
                                         <FontAwesomeIcon className={cx('square-check')} icon={faSquareCheck} />
                                     </Link>
                                     36- 38(US: 3.5- 5.5)
                                 </li>
                                 <li className={cx('brand')}>
-                                    <Link className={cx('checkbox')} to={'/sneakers/adidas'}>
+                                    <Link className={cx('checkbox')} to={'/sneakers/medium'}>
                                         <FontAwesomeIcon className={cx('square')} icon={faSquare} />
 
                                         <FontAwesomeIcon className={cx('square-check')} icon={faSquareCheck} />
@@ -237,7 +253,7 @@ function Adidas({ cartItems, handleAddProducts, wishItems, handleAddWishProducts
                                     39- 41(US: 6.5- 8)
                                 </li>
                                 <li className={cx('brand')}>
-                                    <Link className={cx('checkbox')} to={'/sneakers/jordan'}>
+                                    <Link className={cx('checkbox')} to={'/sneakers/large'}>
                                         <FontAwesomeIcon className={cx('square')} icon={faSquare} />
 
                                         <FontAwesomeIcon className={cx('square-check')} icon={faSquareCheck} />
@@ -246,7 +262,7 @@ function Adidas({ cartItems, handleAddProducts, wishItems, handleAddWishProducts
                                 </li>
 
                                 <li className={cx('brand')}>
-                                    <Link className={cx('checkbox')} to={'/sneakers/converse'}>
+                                    <Link className={cx('checkbox')} to={'/sneakers/extra-large'}>
                                         <FontAwesomeIcon className={cx('square')} icon={faSquare} />
 
                                         <FontAwesomeIcon className={cx('square-check')} icon={faSquareCheck} />
@@ -256,10 +272,7 @@ function Adidas({ cartItems, handleAddProducts, wishItems, handleAddWishProducts
                             </ul>
                         </ul>
                     </div>
-                    <img
-                        className={cx('sidebar-img')}
-                        src="https://pyxis.nymag.com/v1/imgs/c8c/c6f/a822e27af8ae7ae42c30004c46f0045816-01-Off-White-sneaker-LEDE.rvertical.w600.jpg"
-                    />
+                    <img className={cx('sidebar-img')} src={sidebar} />
                 </aside>
                 <div className={cx('products')}>
                     <h1 className={cx('products-header')}>PRODUCTS</h1>
@@ -272,8 +285,16 @@ function Adidas({ cartItems, handleAddProducts, wishItems, handleAddWishProducts
                             />
                         ))}
                     </div>
+                    {/* <div onClick={() => setHeight(height + 1450)} className={cx('products-more')}>
+                        <h2 className={cx('products-more-content')}>-----Watch more products-----</h2>
+                    </div> */}
                 </div>
             </div>
+            {scroll && (
+                <button className={cx('btn-top')} onClick={moveToTop}>
+                    <FontAwesomeIcon icon={faArrowUp} />
+                </button>
+            )}
             <End />
         </div>
     );

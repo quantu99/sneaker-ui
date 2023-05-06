@@ -3,6 +3,7 @@
 }
 .wrapper-3 {
     height: 690px;
+    border-radius: 30px;
     margin-top: 75px;
     margin-left: 34px;
     border: 1px solid #eeeeee;
@@ -36,6 +37,19 @@
     cursor: pointer;
     &:hover {
         color: var(--primary-color);
+        transition: all 0.3s linear;
+    }
+}
+.btn-top {
+    cursor: pointer;
+    background-color: transparent;
+    width: 50px;
+    height: 50px;
+    bottom: 20px;
+    right: 20px;
+    position: fixed;
+    &:hover {
+        background-color: #eeeeee;
         transition: all 0.3s linear;
     }
 }

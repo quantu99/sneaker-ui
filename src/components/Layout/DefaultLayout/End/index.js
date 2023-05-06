@@ -5,13 +5,14 @@ import { faHeadset } from '@fortawesome/free-solid-svg-icons';
 import song2 from '../../../../music/song2.mp3';
 import { Link } from 'react-router-dom';
 import { faFacebook, faInstagram, faTiktok, faYoutube } from '@fortawesome/free-brands-svg-icons';
+import logo from '../Top/topImage/logo.jpg';
 const cx = classNames.bind(styles);
 function End() {
     return (
         <div className={cx('wrapper')}>
             <div className={cx('container')}>
                 <div className={cx('container-1')}>
-                    <img src="https://scontent.fvca1-3.fna.fbcdn.net/v/t1.15752-9/338080670_915671709686265_8393406944187007139_n.png?_nc_cat=110&ccb=1-7&_nc_sid=ae9488&_nc_ohc=MWmUCmxljc8AX_wUeCR&_nc_ht=scontent.fvca1-3.fna&oh=03_AdS8zvTwi1LHHD4gtohmGYpsoa1JOGHIDmuytqyz6MxYYw&oe=644B04DF" />
+                    <img className={cx('container-1-img')} src={logo} />
                     <div className={cx('container-1-center')}>
                         <div className={cx('content')}>
                             <FontAwesomeIcon className={cx('container-1-content-icon')} icon={faHeadset} />

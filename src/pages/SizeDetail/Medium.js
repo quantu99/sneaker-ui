@@ -1,26 +1,26 @@
-import { useEffect } from 'react';
-import { useState } from 'react';
-import styles from './BrandsDetail.module.scss';
+import { useState, useEffect } from 'react';
 import classNames from 'classnames/bind';
+import styles from './SizeDetail.module.scss';
 import { Link } from 'react-router-dom';
+import sneaker from '../../image/81sneakers4.jpg';
+
 import Tippy from '@tippyjs/react/headless';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import sidebar from '../../image/sidebar.jpg';
 import { faSquare, faHeart } from '@fortawesome/free-regular-svg-icons';
 import {
     faArrowUp,
-    faCircleCheck,
-    faHeartCircleCheck,
     faSquareCheck,
     faCartShopping,
     faSliders,
     faArrowUpRightFromSquare,
     faChevronRight,
+    faCircleCheck,
+    faHeartCircleCheck,
 } from '@fortawesome/free-solid-svg-icons';
 import Header from '../../components/Layout/DefaultLayout/Header';
 import End from '../../components/Layout/DefaultLayout/End';
 const cx = classNames.bind(styles);
-const PumaItems = ({ product, handleAddProducts, handleAddWishProducts }) => {
+function MediumItems({ product, handleAddProducts, handleAddWishProducts }) {
     const [iconVisible, setIconVisible] = useState(true);
     const [textVisible, setTextVisible] = useState(true);
     function toggleIcon() {
@@ -114,9 +114,8 @@ const PumaItems = ({ product, handleAddProducts, handleAddWishProducts }) => {
             </div>
         </div>
     );
-};
-function Puma({ cartItems, handleAddProducts, wishItems, handleAddWishProducts, productItems }) {
-    const [brand, setBrand] = useState([]);
+}
+function Medium({ cartItems, handleAddProducts, wishItems, handleAddWishProducts, productItems }) {
     const [scroll, setScroll] = useState(false);
     useEffect(() => {
         const handleScroll = function () {
@@ -130,11 +129,12 @@ function Puma({ cartItems, handleAddProducts, wishItems, handleAddWishProducts, 
     const moveToTop = () => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     };
+    const [size, setSize] = useState([]);
     useEffect(() => {
         const products = productItems.filter((products) => {
-            return products.brand.includes('puma');
+            return products.size >= 39 && products.size <= 41;
         });
-        setBrand(products);
+        setSize(products);
     }, []);
     return (
         <div className={cx('wrapper')}>
@@ -154,8 +154,8 @@ function Puma({ cartItems, handleAddProducts, wishItems, handleAddWishProducts, 
                 </Link>
                 <FontAwesomeIcon className={cx('header-icon')} icon={faChevronRight} />
 
-                <Link to={'/sneakers/puma'} className={cx('header-product')}>
-                    Puma
+                <Link to={'/sneakers/1000000'} className={cx('header-product')}>
+                    Size: 39- 41
                 </Link>
             </div>
             <div className={cx('wrapper-2')}>
@@ -188,12 +188,9 @@ function Puma({ cartItems, handleAddProducts, wishItems, handleAddWishProducts, 
                             </li>
                             <li className={cx('brand')}>
                                 <Link className={cx('checkbox')} to={'/sneakers/puma'}>
-                                    <FontAwesomeIcon className={cx('square', 'puma')} icon={faSquare} />
+                                    <FontAwesomeIcon className={cx('square')} icon={faSquare} />
 
-                                    <FontAwesomeIcon
-                                        className={cx('square-check', 'puma-check')}
-                                        icon={faSquareCheck}
-                                    />
+                                    <FontAwesomeIcon className={cx('square-check')} icon={faSquareCheck} />
                                 </Link>
                                 Puma
                             </li>
@@ -245,9 +242,12 @@ function Puma({ cartItems, handleAddProducts, wishItems, handleAddWishProducts, 
                                 </li>
                                 <li className={cx('brand')}>
                                     <Link className={cx('checkbox')} to={'/sneakers/medium'}>
-                                        <FontAwesomeIcon className={cx('square')} icon={faSquare} />
+                                        <FontAwesomeIcon className={cx('square', 'medium')} icon={faSquare} />
 
-                                        <FontAwesomeIcon className={cx('square-check')} icon={faSquareCheck} />
+                                        <FontAwesomeIcon
+                                            className={cx('square-check', 'medium-check')}
+                                            icon={faSquareCheck}
+                                        />
                                     </Link>
                                     39- 41(US: 6.5- 8)
                                 </li>
@@ -271,13 +271,13 @@ function Puma({ cartItems, handleAddProducts, wishItems, handleAddWishProducts, 
                             </ul>
                         </ul>
                     </div>
-                    <img className={cx('sidebar-img')} src={sidebar} />
+                    <img className={cx('sidebar-img')} src={sneaker} />
                 </aside>
                 <div className={cx('products')}>
                     <h1 className={cx('products-header')}>PRODUCTS</h1>
                     <div className={cx('products-detail')}>
-                        {brand.map((product) => (
-                            <PumaItems
+                        {size.map((product) => (
+                            <MediumItems
                                 product={product}
                                 handleAddProducts={handleAddProducts}
                                 handleAddWishProducts={handleAddWishProducts}
@@ -296,4 +296,4 @@ function Puma({ cartItems, handleAddProducts, wishItems, handleAddWishProducts, 
     );
 }
 
-export default Puma;
+export default Medium;

@@ -10,6 +10,9 @@ import img12 from '.././image/img12.jpg';
 import puma1 from '.././image/puma1.jpg';
 import pumawhitegum from '../image/pumawhitegum.jpg';
 import af1wheat from '../image/af1wheat.jpg';
+import pitchgreen from '../image/pitchgreen.jpg';
+import jdshattered from '../image/jdshattered.jpg';
+import niketvsignal from '../image/niketvsignal.jpg';
 const data = {
     productItems: [
         {
@@ -48,12 +51,12 @@ const data = {
         {
             id: 4,
             img: img4,
-            brand: 'jordan',
-            name: "jordan 1 retro high og 'volt gold'",
-            size: '41/42/42.5/43',
+            brand: 'nike',
+            name: "nike air zoom superrep 2 'barely green'",
+            size: 39,
             cond: 'New',
             dp: 'Nationwide delivery and pay when received. You can check the product.',
-            price: 3950000,
+            price: 1350000,
             type: 'shoes',
         },
         {
@@ -145,36 +148,36 @@ const data = {
             type: 'shoes',
         },
         {
-            id: 12,
-            img: img12,
-            brand: 'adidas',
-            name: 'adidas alphabounce rc black solar redtar og',
-            size: 42,
-            cond: 'used',
+            id: 13,
+            img: pitchgreen,
+            brand: 'nike',
+            name: 'nike af1 "07 LX""pitch green"',
+            size: 44,
+            cond: 'new',
             dp: 'Nationwide delivery and pay when received. You can check the product.',
-            price: 850000,
+            price: 2700000,
             type: 'shoes',
         },
         {
-            id: 12,
-            img: img12,
-            brand: 'adidas',
-            name: 'adidas alphabounce rc black solar redtar og',
-            size: 42,
+            id: 14,
+            img: jdshattered,
+            brand: 'jordan',
+            name: 'jordan 1 retro high "shattered backboard"',
+            size: 44.5,
             cond: 'used',
             dp: 'Nationwide delivery and pay when received. You can check the product.',
-            price: 850000,
+            price: 4800000,
             type: 'shoes',
         },
         {
-            id: 12,
-            img: img12,
-            brand: 'adidas',
-            name: 'adidas alphabounce rc black solar redtar og',
-            size: 42,
+            id: 15,
+            img: niketvsignal,
+            brand: 'nike',
+            name: 'nike dunk high sb "tv signal"',
+            size: 42.5,
             cond: 'used',
             dp: 'Nationwide delivery and pay when received. You can check the product.',
-            price: 850000,
+            price: 2200000,
             type: 'shoes',
         },
     ],
