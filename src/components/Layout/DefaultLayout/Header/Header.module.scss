@@ -19,7 +19,7 @@
 .header_upper-menu {
     width: 100%;
     display: flex;
-    // justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 .header_upper-menu-list {
@@ -28,7 +28,7 @@
     font-weight: 600;
 }
 .header_upper-menu-list-item {
-    padding: 0px 70px;
+    padding: 0px 90px;
     position: relative;
     color: black;
 }
