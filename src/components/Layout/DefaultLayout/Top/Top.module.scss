@@ -48,6 +48,7 @@
     img {
         height: 100%;
         width: 100%;
+        object-fit: cover;
         &:hover {
             filter: brightness(0.7);
             transition: all 0.2s ease-in;
